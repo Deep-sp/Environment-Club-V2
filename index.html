@@ -37,21 +37,16 @@
         <div class="max-w-7xl mx-auto px-4 py-4 flex flex-col md:flex-row justify-between items-center gap-4">
             <div class="flex items-center gap-4">
                 <div class="flex items-center gap-2">
-                    <img src="https://www.jazanu.edu.sa/themes/custom/jazan/logo.svg" alt="جامعة جازان" class="h-12 object-contain" onerror="this.style.display='none'">
-                    <div class="w-12 h-12 bg-blue-900 rounded-full flex items-center justify-center text-white text-xs font-bold text-center border-2 border-blue-200 leading-tight">جامعة<br>جازان</div>
+                    <img src="Asset/Asset 1-8.png" alt="جامعة جازان" class="h-16 object-contain" onerror="this.style.display='none'">
                 </div>
                 <div class="flex items-center gap-2 border-r-2 border-gray-200 pr-4">
-                    <div class="w-12 h-12 bg-indigo-600 rounded-full flex items-center justify-center text-white text-xs font-bold text-center border-2 border-indigo-200 leading-tight">عمادة<br>شؤون<br>الطلاب</div>
+                    <img src="Asset/Asset SA.png" alt="عمادة شؤون الطلاب" class="h-10 object-contain" onerror="this.style.display='none'">
                 </div>
             </div>
             
             <div class="flex items-center gap-3 cursor-pointer group" onclick="navigateTo('home')">
                 <div class="text-right">
-                    <h1 class="text-2xl font-bold text-indigo-800 group-hover:text-indigo-600 transition-colors">نادي أصدقاء البيئة</h1>
-                    <p class="text-sm text-gray-500">Environment Club</p>
-                </div>
-                <div class="w-16 h-16 bg-indigo-100 rounded-full flex items-center justify-center border-2 border-indigo-600 overflow-hidden">
-                    <i data-lucide="leaf" class="text-indigo-700 w-8 h-8"></i>
+                    <img src="Asset/نادي أصدقاء البيئة Environment Club.png" alt="عمادة شؤون الطلاب" class="h-32 object-contain" onerror="this.style.display='none'">  
                 </div>
             </div>
         </div>
@@ -64,7 +59,7 @@
         <div id="view-home" class="view active">
             <div class="animate-fade-in">
                 <section class="bg-indigo-50 py-12 px-4 mb-12 rounded-3xl text-center max-w-5xl mx-auto mt-8 border border-indigo-100 shadow-sm">
-                    <i data-lucide="leaf" class="mx-auto text-indigo-600 w-12 h-12 mb-4"></i>
+                    <img src="Asset/Environment Club.png" alt="نادي أصدقاء البيئة" class="mx-auto block h-32 object-contain" onerror="this.style.display='none'">
                     <h2 class="text-3xl font-bold text-indigo-900 mb-4">مرحباً بكم في نادي أصدقاء البيئة</h2>
                     <p class="text-lg text-gray-700 leading-relaxed max-w-3xl mx-auto">
                         نادي أصدقاء البيئة هو المكان الأمثل الذي يساعد الطلاب في المعرفة والعمل بشكل مناسب مع مختلف البيئات الأكاديمية والرياضية والجامعية 
@@ -140,7 +135,7 @@
             </div>
         </div>
 
-        <!-- View: Academic -->
+        <!-- View: Academic (قائمة الكليات) -->
         <div id="view-academic" class="view">
             <div class="max-w-7xl mx-auto px-4 py-8">
                 <button onclick="navigateTo('home')" class="flex items-center gap-2 text-gray-500 hover:text-indigo-600 transition-colors mb-6 font-medium bg-white px-4 py-2 rounded-lg border border-gray-200 shadow-sm w-fit">
@@ -157,160 +152,1334 @@
             </div>
         </div>
 
-        <!-- View: College Details -->
-        <div id="view-college-details" class="view">
+        <!-- ========================================================================= -->
+        <!-- صفحات الكليات المنفصلة -->
+        <!-- ========================================================================= -->
+
+        <!-- 1. الكلية التطبيقية -->
+        <div id="view-college-applied" class="view">
             <div class="max-w-5xl mx-auto px-4 py-8">
                 <button onclick="navigateTo('academic')" class="flex items-center gap-2 text-gray-500 hover:text-indigo-600 transition-colors mb-6 font-medium bg-white px-4 py-2 rounded-lg border border-gray-200 shadow-sm w-fit">
                     <i data-lucide="chevron-right" class="w-5 h-5"></i> العودة للكليات
                 </button>
                 
                 <div class="bg-indigo-900 text-white rounded-3xl p-8 mb-8 shadow-lg">
-                    <h2 id="college-title" class="text-3xl font-bold mb-2">اسم الكلية</h2>
+                    <h2 class="text-3xl font-bold mb-2">الكلية التطبيقية</h2>
                     <p class="text-indigo-200">البيئة الأكاديمية دليلك الشامل للتميز والنجاح</p>
                 </div>
 
-                <!-- Knowledge Resources -->
                 <section class="bg-white rounded-2xl p-6 shadow-sm border border-gray-100 mb-8">
-                    <h3 class="text-2xl font-bold text-indigo-900 mb-6 flex items-center gap-2 border-b pb-4">
-                        <i data-lucide="book-open" class="text-indigo-600 w-6 h-6"></i> مصادر المعرفة والمكتبات
-                    </h3>
+                    <h3 class="text-2xl font-bold text-indigo-900 mb-6 flex items-center gap-2 border-b pb-4"><i data-lucide="book-open" class="text-indigo-600 w-6 h-6"></i> مصادر المعرفة في الكلية</h3>
                     <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
                         <div class="bg-blue-50 p-5 rounded-xl border border-blue-100">
-                            <h4 class="font-bold text-blue-900 text-lg mb-2">المكتبة العامة الجامعية</h4>
-                            <p class="text-gray-700 text-sm mb-4 leading-relaxed">
-                                توفر المكتبة المركزية في جامعة جازان مساحات هادئة للمذاكرة وآلاف المراجع والكتب المطبوعة التي تدعم المناهج الدراسية لجميع الكليات 
-                            </p>
+                            <h4 class="font-bold text-blue-900 text-lg mb-2">المكتبة العامة في الكلية</h4>
+                            <p class="text-gray-700 text-sm mb-4 leading-relaxed">مساحة هادئة توفر المصادر والكتب المطبوعة المتخصصة التي تدعم مناهج طلاب وطالبات الكلية</p>
+                            <div class="flex flex-col gap-2 text-sm text-gray-700 font-medium">
+                                <span class="flex items-center gap-2"><i data-lucide="clock" class="w-4 h-4 text-blue-600"></i> أوقات العمل: 8:00 صباحاً - 2:00 مساءً</span>
+                                <span class="flex items-center gap-2"><i data-lucide="map-pin" class="w-4 h-4 text-blue-600"></i> الموقع: داخل مقر الكلية</span>
+                            </div>
                         </div>
                         <div class="bg-indigo-50 p-5 rounded-xl border border-indigo-100 flex flex-col justify-between">
                             <div>
                                 <h4 class="font-bold text-indigo-900 text-lg mb-2">المكتبة السعودية الرقمية (SDL)</h4>
-                                <p class="text-gray-700 text-sm mb-4 leading-relaxed">
-                                    تتيح لك الوصول إلى أكبر تجمع إلكتروني للكتب الأكاديمية والمقالات العلمية والمجلات المحكمة على مستوى الشرق الأوسط
-                                </p>
+                                <p class="text-gray-700 text-sm mb-4 leading-relaxed">بوابتك لأكبر تجمع إلكتروني للمراجع والكتب والمقالات العلمية المحكمة على مستوى الشرق الأوسط</p>
                             </div>
-                            <a href="https://www.jazanu.edu.sa/ar/administration/departments/managing-knowledge-resources/sdl-0" target="_blank" class="bg-indigo-600 hover:bg-indigo-700 text-white px-4 py-2 rounded-lg text-sm font-medium flex items-center justify-center gap-2 w-fit transition-colors">
-                                الدخول للمكتبة الرقمية <i data-lucide="external-link" class="w-4 h-4"></i>
-                            </a>
+                            <a href="https://www.jazanu.edu.sa/ar/administration/departments/managing-knowledge-resources/sdl-0" target="_blank" class="bg-indigo-600 hover:bg-indigo-700 text-white px-4 py-2 rounded-lg text-sm font-medium flex items-center justify-center gap-2 w-fit transition-colors">الدخول للمكتبة الرقمية <i data-lucide="external-link" class="w-4 h-4"></i></a>
                         </div>
                     </div>
                 </section>
 
-                <!-- Majors -->
                 <section class="bg-white rounded-2xl p-6 shadow-sm border border-gray-100 mb-8">
-                    <h3 class="text-2xl font-bold text-indigo-900 mb-6 flex items-center gap-2 border-b pb-4">
-                        <i data-lucide="briefcase" class="text-indigo-600 w-6 h-6"></i> التخصصات المتاحة
-                    </h3>
-                    <div id="majors-container" class="flex flex-wrap gap-3">
-                        <!-- Dynamic Content -->
+                    <h3 class="text-2xl font-bold text-indigo-900 mb-6 flex items-center gap-2 border-b pb-4"><i data-lucide="briefcase" class="text-indigo-600 w-6 h-6"></i> التخصصات المتاحة</h3>
+                    <div class="flex flex-wrap gap-3">
+                        <span class="bg-gray-50 text-gray-800 border border-gray-200 px-4 py-2 rounded-full text-sm font-medium hover:bg-indigo-50">تخصص الأمن السيبراني</span>
+                        <span class="bg-gray-50 text-gray-800 border border-gray-200 px-4 py-2 rounded-full text-sm font-medium hover:bg-indigo-50">تخصص الوسائط وتقنية الويب</span>
+                        <span class="bg-gray-50 text-gray-800 border border-gray-200 px-4 py-2 rounded-full text-sm font-medium hover:bg-indigo-50">تخصص التسويق والتجارة الإلكترونية</span>
+                        <span class="bg-gray-50 text-gray-800 border border-gray-200 px-4 py-2 rounded-full text-sm font-medium hover:bg-indigo-50">تخصص الإدارة السياحية</span>
+                        <span class="bg-gray-50 text-gray-800 border border-gray-200 px-4 py-2 rounded-full text-sm font-medium hover:bg-indigo-50">تخصص المحاسبة المهنية</span>
+                        <span class="bg-gray-50 text-gray-800 border border-gray-200 px-4 py-2 rounded-full text-sm font-medium hover:bg-indigo-50">تخصص إدارة أنظمة الشبكات</span>
+                        <span class="bg-gray-50 text-gray-800 border border-gray-200 px-4 py-2 rounded-full text-sm font-medium hover:bg-indigo-50">تخصص إدارة الخدمات الصحية</span>
+                        <span class="bg-gray-50 text-gray-800 border border-gray-200 px-4 py-2 rounded-full text-sm font-medium hover:bg-indigo-50">تخصص إدارة المخاطر والتأمين</span>
+                        <span class="bg-gray-50 text-gray-800 border border-gray-200 px-4 py-2 rounded-full text-sm font-medium hover:bg-indigo-50">تخصص إدارة المستودعات وسلاسل الإمداد</span>
+                        <span class="bg-gray-50 text-gray-800 border border-gray-200 px-4 py-2 rounded-full text-sm font-medium hover:bg-indigo-50">تخصص التصميم الداخلي</span>
+                        <span class="bg-gray-50 text-gray-800 border border-gray-200 px-4 py-2 rounded-full text-sm font-medium hover:bg-indigo-50">تخصص الدعم الفني</span>
+                        <span class="bg-gray-50 text-gray-800 border border-gray-200 px-4 py-2 rounded-full text-sm font-medium hover:bg-indigo-50">تخصص السلامة والصحة المهنية</span>
+                        <span class="bg-gray-50 text-gray-800 border border-gray-200 px-4 py-2 rounded-full text-sm font-medium hover:bg-indigo-50">تخصص الموارد البشرية</span>
+                        <span class="bg-gray-50 text-gray-800 border border-gray-200 px-4 py-2 rounded-full text-sm font-medium hover:bg-indigo-50">تخصص تصميم الأزياء</span>
+                        <span class="bg-gray-50 text-gray-800 border border-gray-200 px-4 py-2 rounded-full text-sm font-medium hover:bg-indigo-50">تخصص تكنولوجيا حماية البيئة</span>
+                        <span class="bg-gray-50 text-gray-800 border border-gray-200 px-4 py-2 rounded-full text-sm font-medium hover:bg-indigo-50">تخصص فنون ومهارات الطهي</span>
+                        <span class="bg-gray-50 text-gray-800 border border-gray-200 px-4 py-2 rounded-full text-sm font-medium hover:bg-indigo-50">تخصص مساعد طبيب أسنان</span>
                     </div>
                 </section>
 
-                <!-- Admin Hierarchy -->
                 <section class="bg-white rounded-2xl p-6 shadow-sm border border-gray-100 mb-8">
-                    <h3 class="text-2xl font-bold text-indigo-900 mb-6 flex items-center gap-2 border-b pb-4">
-                        <i data-lucide="activity" class="text-indigo-600 w-6 h-6"></i> التسلسل الإداري لحل المشكلات
-                    </h3>
+                    <h3 class="text-2xl font-bold text-indigo-900 mb-6 flex items-center gap-2 border-b pb-4"><i data-lucide="activity" class="text-indigo-600 w-6 h-6"></i> التسلسل الإداري لحل المشكلات</h3>
                     <div class="space-y-4 relative before:absolute before:inset-0 before:mr-5 md:before:mx-auto md:before:translate-x-0 before:h-full before:w-0.5 before:bg-gradient-to-b before:from-transparent before:via-indigo-200 before:to-transparent">
-                        
-                        <div class="relative flex items-center justify-between md:justify-normal md:even:flex-row-reverse group">
-                            <div class="flex items-center justify-center w-10 h-10 rounded-full border-4 border-white bg-indigo-100 text-indigo-600 shadow shrink-0 md:order-1 md:group-odd:translate-x-1/2 md:group-even:-translate-x-1/2 font-bold z-10">1</div>
-                            <div class="w-[calc(100%-4rem)] md:w-[calc(50%-2.5rem)] bg-gray-50 p-4 rounded-xl border border-gray-100 shadow-sm hover:shadow-md transition-shadow">
-                                <h4 class="font-bold text-gray-900 mb-1">المرشد الأكاديمي</h4>
-                                <p class="text-sm text-gray-500 mb-2">خطوتك الأولى للتوجيه والمساعدة</p>
-                                <p class="text-xs text-indigo-600 flex items-center gap-1 bg-indigo-50 w-fit px-2 py-1 rounded"><i data-lucide="mail" class="w-3 h-3"></i> advisor.demo@jazanu.edu.sa</p>
-                            </div>
-                        </div>
-
-                        <div class="relative flex items-center justify-between md:justify-normal md:even:flex-row-reverse group">
-                            <div class="flex items-center justify-center w-10 h-10 rounded-full border-4 border-white bg-indigo-100 text-indigo-600 shadow shrink-0 md:order-1 md:group-odd:translate-x-1/2 md:group-even:-translate-x-1/2 font-bold z-10">2</div>
-                            <div class="w-[calc(100%-4rem)] md:w-[calc(50%-2.5rem)] bg-gray-50 p-4 rounded-xl border border-gray-100 shadow-sm hover:shadow-md transition-shadow">
-                                <h4 class="font-bold text-gray-900 mb-1">وكيل شؤون الطلاب في القسم</h4>
-                                <p class="text-sm text-gray-500 mb-2">متابعة شؤون الطلاب داخل القسم</p>
-                                <p class="text-xs text-indigo-600 flex items-center gap-1 bg-indigo-50 w-fit px-2 py-1 rounded"><i data-lucide="mail" class="w-3 h-3"></i> v_dep.demo@jazanu.edu.sa</p>
-                            </div>
-                        </div>
-
-                        <div class="relative flex items-center justify-between md:justify-normal md:even:flex-row-reverse group">
-                            <div class="flex items-center justify-center w-10 h-10 rounded-full border-4 border-white bg-indigo-100 text-indigo-600 shadow shrink-0 md:order-1 md:group-odd:translate-x-1/2 md:group-even:-translate-x-1/2 font-bold z-10">3</div>
-                            <div class="w-[calc(100%-4rem)] md:w-[calc(50%-2.5rem)] bg-gray-50 p-4 rounded-xl border border-gray-100 shadow-sm hover:shadow-md transition-shadow">
-                                <h4 class="font-bold text-gray-900 mb-1">رئيس القسم</h4>
-                                <p class="text-sm text-gray-500 mb-2">المرجع الأكاديمي والإداري للقسم</p>
-                                <p class="text-xs text-indigo-600 flex items-center gap-1 bg-indigo-50 w-fit px-2 py-1 rounded"><i data-lucide="mail" class="w-3 h-3"></i> head.demo@jazanu.edu.sa</p>
-                            </div>
-                        </div>
-
-                        <div class="relative flex items-center justify-between md:justify-normal md:even:flex-row-reverse group">
-                            <div class="flex items-center justify-center w-10 h-10 rounded-full border-4 border-white bg-indigo-100 text-indigo-600 shadow shrink-0 md:order-1 md:group-odd:translate-x-1/2 md:group-even:-translate-x-1/2 font-bold z-10">4</div>
-                            <div class="w-[calc(100%-4rem)] md:w-[calc(50%-2.5rem)] bg-gray-50 p-4 rounded-xl border border-gray-100 shadow-sm hover:shadow-md transition-shadow">
-                                <h4 class="font-bold text-gray-900 mb-1">وكيل الكلية للشؤون الأكاديمية</h4>
-                                <p class="text-sm text-gray-500 mb-2">الإشراف على العمليات الأكاديمية</p>
-                                <p class="text-xs text-indigo-600 flex items-center gap-1 bg-indigo-50 w-fit px-2 py-1 rounded"><i data-lucide="mail" class="w-3 h-3"></i> v_col.demo@jazanu.edu.sa</p>
-                            </div>
-                        </div>
-
-                        <div class="relative flex items-center justify-between md:justify-normal md:even:flex-row-reverse group">
-                            <div class="flex items-center justify-center w-10 h-10 rounded-full border-4 border-white bg-indigo-100 text-indigo-600 shadow shrink-0 md:order-1 md:group-odd:translate-x-1/2 md:group-even:-translate-x-1/2 font-bold z-10">5</div>
-                            <div class="w-[calc(100%-4rem)] md:w-[calc(50%-2.5rem)] bg-gray-50 p-4 rounded-xl border border-gray-100 shadow-sm hover:shadow-md transition-shadow">
-                                <h4 class="font-bold text-gray-900 mb-1">عميد الكلية</h4>
-                                <p class="text-sm text-gray-500 mb-2">المرجع الأعلى في الكلية</p>
-                                <p class="text-xs text-indigo-600 flex items-center gap-1 bg-indigo-50 w-fit px-2 py-1 rounded"><i data-lucide="mail" class="w-3 h-3"></i> dean.demo@jazanu.edu.sa</p>
-                            </div>
-                        </div>
-
+                        <div class="relative flex items-center justify-between md:justify-normal md:even:flex-row-reverse group"><div class="flex items-center justify-center w-10 h-10 rounded-full border-4 border-white bg-indigo-100 text-indigo-600 shadow shrink-0 md:order-1 md:group-odd:translate-x-1/2 md:group-even:-translate-x-1/2 font-bold z-10">1</div><div class="w-[calc(100%-4rem)] md:w-[calc(50%-2.5rem)] bg-gray-50 p-4 rounded-xl border border-gray-100 shadow-sm"><h4 class="font-bold text-gray-900 mb-1">المرشد الأكاديمي</h4><p class="text-sm text-gray-500 mb-2">خطوتك الأولى للتوجيه والمساعدة</p></div></div>
+                        <div class="relative flex items-center justify-between md:justify-normal md:even:flex-row-reverse group"><div class="flex items-center justify-center w-10 h-10 rounded-full border-4 border-white bg-indigo-100 text-indigo-600 shadow shrink-0 md:order-1 md:group-odd:translate-x-1/2 md:group-even:-translate-x-1/2 font-bold z-10">2</div><div class="w-[calc(100%-4rem)] md:w-[calc(50%-2.5rem)] bg-gray-50 p-4 rounded-xl border border-gray-100 shadow-sm"><h4 class="font-bold text-gray-900 mb-1">وكيل شؤون الطلاب في القسم</h4><p class="text-sm text-gray-500 mb-2">متابعة شؤون الطلاب داخل القسم</p></div></div>
+                        <div class="relative flex items-center justify-between md:justify-normal md:even:flex-row-reverse group"><div class="flex items-center justify-center w-10 h-10 rounded-full border-4 border-white bg-indigo-100 text-indigo-600 shadow shrink-0 md:order-1 md:group-odd:translate-x-1/2 md:group-even:-translate-x-1/2 font-bold z-10">3</div><div class="w-[calc(100%-4rem)] md:w-[calc(50%-2.5rem)] bg-gray-50 p-4 rounded-xl border border-gray-100 shadow-sm"><h4 class="font-bold text-gray-900 mb-1">رئيس القسم</h4><p class="text-sm text-gray-500 mb-2">المرجع الأكاديمي والإداري للقسم</p></div></div>
+                        <div class="relative flex items-center justify-between md:justify-normal md:even:flex-row-reverse group"><div class="flex items-center justify-center w-10 h-10 rounded-full border-4 border-white bg-indigo-100 text-indigo-600 shadow shrink-0 md:order-1 md:group-odd:translate-x-1/2 md:group-even:-translate-x-1/2 font-bold z-10">4</div><div class="w-[calc(100%-4rem)] md:w-[calc(50%-2.5rem)] bg-gray-50 p-4 rounded-xl border border-gray-100 shadow-sm"><h4 class="font-bold text-gray-900 mb-1">وكيل الكلية للشؤون الأكاديمية</h4><p class="text-sm text-gray-500 mb-2">الإشراف على العمليات الأكاديمية</p></div></div>
+                        <div class="relative flex items-center justify-between md:justify-normal md:even:flex-row-reverse group"><div class="flex items-center justify-center w-10 h-10 rounded-full border-4 border-white bg-indigo-100 text-indigo-600 shadow shrink-0 md:order-1 md:group-odd:translate-x-1/2 md:group-even:-translate-x-1/2 font-bold z-10">5</div><div class="w-[calc(100%-4rem)] md:w-[calc(50%-2.5rem)] bg-gray-50 p-4 rounded-xl border border-gray-100 shadow-sm"><h4 class="font-bold text-gray-900 mb-1">عميد الكلية</h4><p class="text-sm text-gray-500 mb-2">المرجع الأعلى في الكلية</p></div></div>
                     </div>
                 </section>
 
-                <!-- Advisory Board -->
                 <section class="bg-white rounded-2xl p-6 shadow-sm border border-gray-100 mb-8">
-                    <h3 class="text-2xl font-bold text-indigo-900 mb-6 flex items-center gap-2 border-b pb-4">
-                        <i data-lucide="users" class="text-indigo-600 w-6 h-6"></i> المجلس الاستشاري الطلابي
-                    </h3>
+                    <h3 class="text-2xl font-bold text-indigo-900 mb-6 flex items-center gap-2 border-b pb-4"><i data-lucide="users" class="text-indigo-600 w-6 h-6"></i> المجلس الاستشاري الطلابي</h3>
                     <div class="bg-gradient-to-l from-blue-50 to-indigo-50 p-6 rounded-xl border border-blue-100 flex flex-col md:flex-row gap-6 items-center">
-                        <div class="w-20 h-20 bg-white rounded-full flex items-center justify-center shadow-sm shrink-0">
-                            <i data-lucide="users" class="text-blue-600 w-8 h-8"></i>
-                        </div>
-                        <div>
-                            <h4 class="font-bold text-gray-900 text-lg mb-2">كيف يخدمك المجلس؟</h4>
-                            <p class="text-gray-700 text-sm mb-4 leading-relaxed">
-                                يعتبر المجلس الاستشاري حلقة الوصل بين الطلاب وعمادة الكلية يهدف إلى إيصال صوت الطلاب ومقترحاتهم ومناقشة التحديات التي تواجههم للمساهمة في تطوير البيئة الأكاديمية والخدمات المقدمة 
-                            </p>
-                            <div class="flex flex-wrap gap-4 text-sm">
-                                <span class="flex items-center gap-1 text-gray-600 bg-white px-3 py-1 rounded-lg border shadow-sm">
-                                    <i data-lucide="user-circle" class="w-4 h-4"></i> رئيس المجلس: (بيانات تجريبية - راجع موقع الكلية)
-                                </span>
-                                <span class="flex items-center gap-1 text-gray-600 bg-white px-3 py-1 rounded-lg border shadow-sm">
-                                    <i data-lucide="mail" class="w-4 h-4"></i> تواصل: advisory.demo@jazanu.edu.sa
-                                </span>
+                        <div class="w-20 h-20 bg-white rounded-full flex items-center justify-center shadow-sm shrink-0"><i data-lucide="users" class="text-blue-600 w-8 h-8"></i></div>
+                        <div class="w-full">
+                            <h4 class="font-bold text-gray-900 text-lg mb-2">عن المجلس</h4>
+                            <p class="text-gray-700 text-sm mb-4 leading-relaxed">هو حلقة الوصل بين الطلاب وعمادة الكلية يهدف لإيصال صوت الطلاب ومقترحاتهم ومناقشة التحديات للمساهمة في تطوير البيئة الأكاديمية والخدمات المقدمة</p>
+                            <div class="flex flex-wrap gap-3 text-sm mt-2">
+                                <span class="flex items-center gap-1 text-gray-700 bg-white px-3 py-2 rounded-lg border shadow-sm"><i data-lucide="map-pin" class="w-4 h-4 text-indigo-500"></i> الدور الأرضي بجانب مكتب شؤون الطلاب في البهو الرئيسي</span>
+                                <span class="flex items-center gap-1 text-gray-700 bg-white px-3 py-2 rounded-lg border shadow-sm"><i data-lucide="phone" class="w-4 h-4 text-indigo-500"></i> رقم التواصل: (يضاف لاحقاً)</span>
+                                <span class="flex items-center gap-1 text-gray-700 bg-white px-3 py-2 rounded-lg border shadow-sm"><i data-lucide="mail" class="w-4 h-4 text-indigo-500"></i> advisory@jazanu.edu.sa</span>
                             </div>
                         </div>
                     </div>
                 </section>
 
-                <!-- College Club -->
                 <section class="bg-white rounded-2xl p-6 shadow-sm border border-gray-100 mb-8">
-                    <h3 class="text-2xl font-bold text-indigo-900 mb-6 flex items-center gap-2 border-b pb-4">
-                        <i data-lucide="heart-pulse" class="text-indigo-600 w-6 h-6"></i> نادي الكلية
-                    </h3>
+                    <h3 class="text-2xl font-bold text-indigo-900 mb-6 flex items-center gap-2 border-b pb-4"><i data-lucide="heart-pulse" class="text-indigo-600 w-6 h-6"></i> نادي الكلية</h3>
                     <div class="flex flex-col md:flex-row gap-6">
                         <div class="flex-1 bg-purple-50 p-6 rounded-xl border border-purple-100">
-                            <h4 class="font-bold text-purple-900 text-lg mb-3">عن النادي وأهدافه</h4>
-                            <ul class="space-y-3 text-sm text-gray-700">
-                                <li class="flex items-start gap-2"><i data-lucide="chevron-left" class="text-purple-500 w-4 h-4 mt-0.5 shrink-0"></i> تنمية المهارات اللامنهجية للطلاب والطالبات في الكلية</li>
-                                <li class="flex items-start gap-2"><i data-lucide="chevron-left" class="text-purple-500 w-4 h-4 mt-0.5 shrink-0"></i> إقامة المعارض والمسابقات المتخصصة في مجالات الكلية</li>
-                                <li class="flex items-start gap-2"><i data-lucide="chevron-left" class="text-purple-500 w-4 h-4 mt-0.5 shrink-0"></i> تعزيز روح المبادرة والعمل الجماعي بين منسوبي الكلية</li>
-                                <li class="flex items-start gap-2"><i data-lucide="chevron-left" class="text-purple-500 w-4 h-4 mt-0.5 shrink-0"></i> تمثيل الكلية في المحافل والمشاركات الجامعية</li>
-                            </ul>
+                            <h4 class="font-bold text-purple-900 text-lg mb-3">عن النادي</h4>
+                            <p class="text-gray-700 text-sm leading-relaxed mb-3">الكيان الطلابي الذي يهتم بتنمية المهارات اللامنهجية للطلاب والطالبات وإقامة المعارض والفعاليات والمسابقات المتخصصة وصقل المواهب الجامعية</p>
                         </div>
                         <div class="flex-1 flex flex-col justify-center items-center bg-gray-50 border border-gray-200 rounded-xl p-6 border-dashed">
                             <i data-lucide="leaf" class="text-gray-400 w-10 h-10 mb-4"></i>
-                            <p class="text-gray-500 text-center font-medium">بادر بالانضمام لنادي كليتك لتصنع الفارق في مسيرتك الجامعية</p>
-                            <button class="mt-4 bg-purple-600 hover:bg-purple-700 text-white px-6 py-2 rounded-lg text-sm font-medium transition-colors">
-                                طلب انضمام للنادي (ديمو)
-                            </button>
+                            <p class="text-gray-500 text-center font-medium mb-4">بادر بالانضمام لنادي كليتك لتصنع الفارق</p>
+                            <a href="#" target="_blank" class="bg-purple-600 hover:bg-purple-700 text-white px-6 py-2 rounded-lg text-sm font-medium transition-colors flex items-center gap-2">معلومات النادي <i data-lucide="external-link" class="w-4 h-4"></i></a>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </div>
+
+        <!-- 2. كلية التطبيقات الصناعية ببيش -->
+        <div id="view-college-baish" class="view">
+            <div class="max-w-5xl mx-auto px-4 py-8">
+                <button onclick="navigateTo('academic')" class="flex items-center gap-2 text-gray-500 hover:text-indigo-600 transition-colors mb-6 font-medium bg-white px-4 py-2 rounded-lg border border-gray-200 shadow-sm w-fit"><i data-lucide="chevron-right" class="w-5 h-5"></i> العودة للكليات</button>
+                <div class="bg-indigo-900 text-white rounded-3xl p-8 mb-8 shadow-lg"><h2 class="text-3xl font-bold mb-2">كلية التطبيقات الصناعية ببيش</h2><p class="text-indigo-200">البيئة الأكاديمية دليلك الشامل للتميز والنجاح</p></div>
+                
+                <section class="bg-white rounded-2xl p-6 shadow-sm border border-gray-100 mb-8">
+                    <h3 class="text-2xl font-bold text-indigo-900 mb-6 flex items-center gap-2 border-b pb-4"><i data-lucide="book-open" class="text-indigo-600 w-6 h-6"></i> مصادر المعرفة في الكلية</h3>
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                        <div class="bg-blue-50 p-5 rounded-xl border border-blue-100">
+                            <h4 class="font-bold text-blue-900 text-lg mb-2">المكتبة العامة في الكلية</h4>
+                            <p class="text-gray-700 text-sm mb-4 leading-relaxed">مساحة هادئة توفر المصادر والكتب المطبوعة المتخصصة التي تدعم مناهج طلاب وطالبات الكلية</p>
+                            <div class="flex flex-col gap-2 text-sm text-gray-700 font-medium">
+                                <span class="flex items-center gap-2"><i data-lucide="clock" class="w-4 h-4 text-blue-600"></i> أوقات العمل: 8:00 صباحاً - 2:00 مساءً</span>
+                                <span class="flex items-center gap-2"><i data-lucide="map-pin" class="w-4 h-4 text-blue-600"></i> الموقع: داخل مقر الكلية</span>
+                            </div>
+                        </div>
+                        <div class="bg-indigo-50 p-5 rounded-xl border border-indigo-100 flex flex-col justify-between">
+                            <div>
+                                <h4 class="font-bold text-indigo-900 text-lg mb-2">المكتبة السعودية الرقمية (SDL)</h4>
+                                <p class="text-gray-700 text-sm mb-4 leading-relaxed">بوابتك لأكبر تجمع إلكتروني للمراجع والكتب والمقالات العلمية المحكمة على مستوى الشرق الأوسط</p>
+                            </div>
+                            <a href="https://www.jazanu.edu.sa/ar/administration/departments/managing-knowledge-resources/sdl-0" target="_blank" class="bg-indigo-600 hover:bg-indigo-700 text-white px-4 py-2 rounded-lg text-sm font-medium flex items-center justify-center gap-2 w-fit transition-colors">الدخول للمكتبة الرقمية <i data-lucide="external-link" class="w-4 h-4"></i></a>
                         </div>
                     </div>
                 </section>
 
+                <section class="bg-white rounded-2xl p-6 shadow-sm border border-gray-100 mb-8">
+                    <h3 class="text-2xl font-bold text-indigo-900 mb-6 flex items-center gap-2 border-b pb-4"><i data-lucide="briefcase" class="text-indigo-600 w-6 h-6"></i> التخصصات المتاحة</h3>
+                    <div class="flex flex-wrap gap-3">
+                        <span class="bg-gray-50 text-gray-800 border border-gray-200 px-4 py-2 rounded-full text-sm font-medium hover:bg-indigo-50">تخصص تقنية هندسة القوى الكهربائية</span>
+                        <span class="bg-gray-50 text-gray-800 border border-gray-200 px-4 py-2 rounded-full text-sm font-medium hover:bg-indigo-50">تخصص تقنية الهندسة الكيميائية</span>
+                        <span class="bg-gray-50 text-gray-800 border border-gray-200 px-4 py-2 rounded-full text-sm font-medium hover:bg-indigo-50">تخصص تقنية هندسة الصيانة الميكانيكية</span>
+                    </div>
+                </section>
+
+                <section class="bg-white rounded-2xl p-6 shadow-sm border border-gray-100 mb-8">
+                    <h3 class="text-2xl font-bold text-indigo-900 mb-6 flex items-center gap-2 border-b pb-4"><i data-lucide="users" class="text-indigo-600 w-6 h-6"></i> المجلس الاستشاري الطلابي</h3>
+                    <div class="bg-gradient-to-l from-blue-50 to-indigo-50 p-6 rounded-xl border border-blue-100 flex flex-col md:flex-row gap-6 items-center">
+                        <div class="w-20 h-20 bg-white rounded-full flex items-center justify-center shadow-sm shrink-0"><i data-lucide="users" class="text-blue-600 w-8 h-8"></i></div>
+                        <div class="w-full">
+                            <h4 class="font-bold text-gray-900 text-lg mb-2">عن المجلس</h4>
+                            <p class="text-gray-700 text-sm mb-4 leading-relaxed">هو حلقة الوصل بين الطلاب وعمادة الكلية يهدف لإيصال صوت الطلاب ومقترحاتهم ومناقشة التحديات للمساهمة في تطوير البيئة الأكاديمية والخدمات المقدمة</p>
+                            <div class="flex flex-wrap gap-3 text-sm mt-2">
+                                <span class="flex items-center gap-1 text-gray-700 bg-white px-3 py-2 rounded-lg border shadow-sm"><i data-lucide="map-pin" class="w-4 h-4 text-indigo-500"></i> الدور الأرضي بجانب مكتب شؤون الطلاب في البهو الرئيسي</span>
+                                <span class="flex items-center gap-1 text-gray-700 bg-white px-3 py-2 rounded-lg border shadow-sm"><i data-lucide="phone" class="w-4 h-4 text-indigo-500"></i> رقم التواصل: (يضاف لاحقاً)</span>
+                                <span class="flex items-center gap-1 text-gray-700 bg-white px-3 py-2 rounded-lg border shadow-sm"><i data-lucide="mail" class="w-4 h-4 text-indigo-500"></i> advisory@jazanu.edu.sa</span>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="bg-white rounded-2xl p-6 shadow-sm border border-gray-100 mb-8">
+                    <h3 class="text-2xl font-bold text-indigo-900 mb-6 flex items-center gap-2 border-b pb-4"><i data-lucide="heart-pulse" class="text-indigo-600 w-6 h-6"></i> نادي الكلية</h3>
+                    <div class="flex flex-col md:flex-row gap-6">
+                        <div class="flex-1 bg-purple-50 p-6 rounded-xl border border-purple-100">
+                            <h4 class="font-bold text-purple-900 text-lg mb-3">عن النادي</h4>
+                            <p class="text-gray-700 text-sm leading-relaxed mb-3">الكيان الطلابي الذي يهتم بتنمية المهارات اللامنهجية للطلاب والطالبات وإقامة المعارض والفعاليات والمسابقات المتخصصة وصقل المواهب الجامعية</p>
+                        </div>
+                        <div class="flex-1 flex flex-col justify-center items-center bg-gray-50 border border-gray-200 rounded-xl p-6 border-dashed">
+                            <i data-lucide="leaf" class="text-gray-400 w-10 h-10 mb-4"></i>
+                            <p class="text-gray-500 text-center font-medium mb-4">بادر بالانضمام لنادي كليتك لتصنع الفارق</p>
+                            <a href="#" target="_blank" class="bg-purple-600 hover:bg-purple-700 text-white px-6 py-2 rounded-lg text-sm font-medium transition-colors flex items-center gap-2">معلومات النادي <i data-lucide="external-link" class="w-4 h-4"></i></a>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </div>
+
+        <!-- 3. الكلية الجامعية بفرسان -->
+        <div id="view-college-farasan" class="view">
+            <div class="max-w-5xl mx-auto px-4 py-8">
+                <button onclick="navigateTo('academic')" class="flex items-center gap-2 text-gray-500 hover:text-indigo-600 transition-colors mb-6 font-medium bg-white px-4 py-2 rounded-lg border border-gray-200 shadow-sm w-fit"><i data-lucide="chevron-right" class="w-5 h-5"></i> العودة للكليات</button>
+                <div class="bg-indigo-900 text-white rounded-3xl p-8 mb-8 shadow-lg"><h2 class="text-3xl font-bold mb-2">الكلية الجامعية بفرسان</h2><p class="text-indigo-200">البيئة الأكاديمية دليلك الشامل للتميز والنجاح</p></div>
+                
+                <section class="bg-white rounded-2xl p-6 shadow-sm border border-gray-100 mb-8">
+                    <h3 class="text-2xl font-bold text-indigo-900 mb-6 flex items-center gap-2 border-b pb-4"><i data-lucide="book-open" class="text-indigo-600 w-6 h-6"></i> مصادر المعرفة في الكلية</h3>
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                        <div class="bg-blue-50 p-5 rounded-xl border border-blue-100">
+                            <h4 class="font-bold text-blue-900 text-lg mb-2">المكتبة العامة في الكلية</h4>
+                            <p class="text-gray-700 text-sm mb-4 leading-relaxed">مساحة هادئة توفر المصادر والكتب المطبوعة المتخصصة التي تدعم مناهج طلاب وطالبات الكلية</p>
+                            <div class="flex flex-col gap-2 text-sm text-gray-700 font-medium">
+                                <span class="flex items-center gap-2"><i data-lucide="clock" class="w-4 h-4 text-blue-600"></i> أوقات العمل: 8:00 صباحاً - 2:00 مساءً</span>
+                                <span class="flex items-center gap-2"><i data-lucide="map-pin" class="w-4 h-4 text-blue-600"></i> الموقع: داخل مقر الكلية</span>
+                            </div>
+                        </div>
+                        <div class="bg-indigo-50 p-5 rounded-xl border border-indigo-100 flex flex-col justify-between">
+                            <div>
+                                <h4 class="font-bold text-indigo-900 text-lg mb-2">المكتبة السعودية الرقمية (SDL)</h4>
+                                <p class="text-gray-700 text-sm mb-4 leading-relaxed">بوابتك لأكبر تجمع إلكتروني للمراجع والكتب والمقالات العلمية المحكمة على مستوى الشرق الأوسط</p>
+                            </div>
+                            <a href="https://www.jazanu.edu.sa/ar/administration/departments/managing-knowledge-resources/sdl-0" target="_blank" class="bg-indigo-600 hover:bg-indigo-700 text-white px-4 py-2 rounded-lg text-sm font-medium flex items-center justify-center gap-2 w-fit transition-colors">الدخول للمكتبة الرقمية <i data-lucide="external-link" class="w-4 h-4"></i></a>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="bg-white rounded-2xl p-6 shadow-sm border border-gray-100 mb-8"><h3 class="text-2xl font-bold text-indigo-900 mb-6 flex items-center gap-2 border-b pb-4"><i data-lucide="briefcase" class="text-indigo-600 w-6 h-6"></i> التخصصات المتاحة</h3>
+                    <div class="flex flex-wrap gap-3">
+                        <span class="bg-gray-50 text-gray-800 border border-gray-200 px-4 py-2 rounded-full text-sm font-medium hover:bg-indigo-50">تخصص الاقتصاد المنزلي</span>
+                        <span class="bg-gray-50 text-gray-800 border border-gray-200 px-4 py-2 rounded-full text-sm font-medium hover:bg-indigo-50">تخصص التمريض</span>
+                        <span class="bg-gray-50 text-gray-800 border border-gray-200 px-4 py-2 rounded-full text-sm font-medium hover:bg-indigo-50">تخصص اللغة الإنجليزية</span>
+                    </div>
+                </section>
+
+                <section class="bg-white rounded-2xl p-6 shadow-sm border border-gray-100 mb-8">
+                    <h3 class="text-2xl font-bold text-indigo-900 mb-6 flex items-center gap-2 border-b pb-4"><i data-lucide="users" class="text-indigo-600 w-6 h-6"></i> المجلس الاستشاري الطلابي</h3>
+                    <div class="bg-gradient-to-l from-blue-50 to-indigo-50 p-6 rounded-xl border border-blue-100 flex flex-col md:flex-row gap-6 items-center">
+                        <div class="w-20 h-20 bg-white rounded-full flex items-center justify-center shadow-sm shrink-0"><i data-lucide="users" class="text-blue-600 w-8 h-8"></i></div>
+                        <div class="w-full">
+                            <h4 class="font-bold text-gray-900 text-lg mb-2">عن المجلس</h4>
+                            <p class="text-gray-700 text-sm mb-4 leading-relaxed">هو حلقة الوصل بين الطلاب وعمادة الكلية يهدف لإيصال صوت الطلاب ومقترحاتهم ومناقشة التحديات للمساهمة في تطوير البيئة الأكاديمية والخدمات المقدمة</p>
+                            <div class="flex flex-wrap gap-3 text-sm mt-2">
+                                <span class="flex items-center gap-1 text-gray-700 bg-white px-3 py-2 rounded-lg border shadow-sm"><i data-lucide="map-pin" class="w-4 h-4 text-indigo-500"></i> الدور الأرضي بجانب مكتب شؤون الطلاب في البهو الرئيسي</span>
+                                <span class="flex items-center gap-1 text-gray-700 bg-white px-3 py-2 rounded-lg border shadow-sm"><i data-lucide="phone" class="w-4 h-4 text-indigo-500"></i> رقم التواصل: (يضاف لاحقاً)</span>
+                                <span class="flex items-center gap-1 text-gray-700 bg-white px-3 py-2 rounded-lg border shadow-sm"><i data-lucide="mail" class="w-4 h-4 text-indigo-500"></i> advisory@jazanu.edu.sa</span>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="bg-white rounded-2xl p-6 shadow-sm border border-gray-100 mb-8">
+                    <h3 class="text-2xl font-bold text-indigo-900 mb-6 flex items-center gap-2 border-b pb-4"><i data-lucide="heart-pulse" class="text-indigo-600 w-6 h-6"></i> نادي الكلية</h3>
+                    <div class="flex flex-col md:flex-row gap-6">
+                        <div class="flex-1 bg-purple-50 p-6 rounded-xl border border-purple-100">
+                            <h4 class="font-bold text-purple-900 text-lg mb-3">عن النادي</h4>
+                            <p class="text-gray-700 text-sm leading-relaxed mb-3">الكيان الطلابي الذي يهتم بتنمية المهارات اللامنهجية للطلاب والطالبات وإقامة المعارض والفعاليات والمسابقات المتخصصة وصقل المواهب الجامعية</p>
+                        </div>
+                        <div class="flex-1 flex flex-col justify-center items-center bg-gray-50 border border-gray-200 rounded-xl p-6 border-dashed">
+                            <i data-lucide="leaf" class="text-gray-400 w-10 h-10 mb-4"></i>
+                            <p class="text-gray-500 text-center font-medium mb-4">بادر بالانضمام لنادي كليتك لتصنع الفارق</p>
+                            <a href="#" target="_blank" class="bg-purple-600 hover:bg-purple-700 text-white px-6 py-2 rounded-lg text-sm font-medium transition-colors flex items-center gap-2">معلومات النادي <i data-lucide="external-link" class="w-4 h-4"></i></a>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </div>
+
+        <!-- 4. الكلية الجامعية بالدائر -->
+        <div id="view-college-aldair" class="view">
+            <div class="max-w-5xl mx-auto px-4 py-8">
+                <button onclick="navigateTo('academic')" class="flex items-center gap-2 text-gray-500 hover:text-indigo-600 transition-colors mb-6 font-medium bg-white px-4 py-2 rounded-lg border border-gray-200 shadow-sm w-fit"><i data-lucide="chevron-right" class="w-5 h-5"></i> العودة للكليات</button>
+                <div class="bg-indigo-900 text-white rounded-3xl p-8 mb-8 shadow-lg"><h2 class="text-3xl font-bold mb-2">الكلية الجامعية بالدائر</h2></div>
+                
+                <section class="bg-white rounded-2xl p-6 shadow-sm border border-gray-100 mb-8">
+                    <h3 class="text-2xl font-bold text-indigo-900 mb-6 flex items-center gap-2 border-b pb-4"><i data-lucide="book-open" class="text-indigo-600 w-6 h-6"></i> مصادر المعرفة في الكلية</h3>
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                        <div class="bg-blue-50 p-5 rounded-xl border border-blue-100">
+                            <h4 class="font-bold text-blue-900 text-lg mb-2">المكتبة العامة في الكلية</h4>
+                            <p class="text-gray-700 text-sm mb-4 leading-relaxed">مساحة هادئة توفر المصادر والكتب المطبوعة المتخصصة التي تدعم مناهج طلاب وطالبات الكلية</p>
+                            <div class="flex flex-col gap-2 text-sm text-gray-700 font-medium">
+                                <span class="flex items-center gap-2"><i data-lucide="clock" class="w-4 h-4 text-blue-600"></i> أوقات العمل: 8:00 صباحاً - 2:00 مساءً</span>
+                                <span class="flex items-center gap-2"><i data-lucide="map-pin" class="w-4 h-4 text-blue-600"></i> الموقع: داخل مقر الكلية</span>
+                            </div>
+                        </div>
+                        <div class="bg-indigo-50 p-5 rounded-xl border border-indigo-100 flex flex-col justify-between">
+                            <div>
+                                <h4 class="font-bold text-indigo-900 text-lg mb-2">المكتبة السعودية الرقمية (SDL)</h4>
+                                <p class="text-gray-700 text-sm mb-4 leading-relaxed">بوابتك لأكبر تجمع إلكتروني للمراجع والكتب والمقالات العلمية المحكمة على مستوى الشرق الأوسط</p>
+                            </div>
+                            <a href="https://www.jazanu.edu.sa/ar/administration/departments/managing-knowledge-resources/sdl-0" target="_blank" class="bg-indigo-600 hover:bg-indigo-700 text-white px-4 py-2 rounded-lg text-sm font-medium flex items-center justify-center gap-2 w-fit transition-colors">الدخول للمكتبة الرقمية <i data-lucide="external-link" class="w-4 h-4"></i></a>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="bg-white rounded-2xl p-6 shadow-sm border border-gray-100 mb-8"><h3 class="text-2xl font-bold text-indigo-900 mb-6 flex items-center gap-2 border-b pb-4"><i data-lucide="briefcase" class="text-indigo-600 w-6 h-6"></i> التخصصات المتاحة</h3>
+                    <div class="flex flex-wrap gap-3">
+                        <span class="bg-gray-50 text-gray-800 border border-gray-200 px-4 py-2 rounded-full text-sm font-medium hover:bg-indigo-50">تخصص العلوم الطبية (التمريض)</span>
+                        <span class="bg-gray-50 text-gray-800 border border-gray-200 px-4 py-2 rounded-full text-sm font-medium hover:bg-indigo-50">تخصص اللغة الإنجليزية</span>
+                        <span class="bg-gray-50 text-gray-800 border border-gray-200 px-4 py-2 rounded-full text-sm font-medium hover:bg-indigo-50">تخصص الرياضيات</span>
+                    </div>
+                </section>
+
+                <section class="bg-white rounded-2xl p-6 shadow-sm border border-gray-100 mb-8">
+                    <h3 class="text-2xl font-bold text-indigo-900 mb-6 flex items-center gap-2 border-b pb-4"><i data-lucide="users" class="text-indigo-600 w-6 h-6"></i> المجلس الاستشاري الطلابي</h3>
+                    <div class="bg-gradient-to-l from-blue-50 to-indigo-50 p-6 rounded-xl border border-blue-100 flex flex-col md:flex-row gap-6 items-center">
+                        <div class="w-20 h-20 bg-white rounded-full flex items-center justify-center shadow-sm shrink-0"><i data-lucide="users" class="text-blue-600 w-8 h-8"></i></div>
+                        <div class="w-full">
+                            <h4 class="font-bold text-gray-900 text-lg mb-2">عن المجلس</h4>
+                            <p class="text-gray-700 text-sm mb-4 leading-relaxed">هو حلقة الوصل بين الطلاب وعمادة الكلية يهدف لإيصال صوت الطلاب ومقترحاتهم ومناقشة التحديات للمساهمة في تطوير البيئة الأكاديمية والخدمات المقدمة</p>
+                            <div class="flex flex-wrap gap-3 text-sm mt-2">
+                                <span class="flex items-center gap-1 text-gray-700 bg-white px-3 py-2 rounded-lg border shadow-sm"><i data-lucide="map-pin" class="w-4 h-4 text-indigo-500"></i> الدور الأرضي بجانب مكتب شؤون الطلاب في البهو الرئيسي</span>
+                                <span class="flex items-center gap-1 text-gray-700 bg-white px-3 py-2 rounded-lg border shadow-sm"><i data-lucide="phone" class="w-4 h-4 text-indigo-500"></i> رقم التواصل: (يضاف لاحقاً)</span>
+                                <span class="flex items-center gap-1 text-gray-700 bg-white px-3 py-2 rounded-lg border shadow-sm"><i data-lucide="mail" class="w-4 h-4 text-indigo-500"></i> advisory@jazanu.edu.sa</span>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="bg-white rounded-2xl p-6 shadow-sm border border-gray-100 mb-8">
+                    <h3 class="text-2xl font-bold text-indigo-900 mb-6 flex items-center gap-2 border-b pb-4"><i data-lucide="heart-pulse" class="text-indigo-600 w-6 h-6"></i> نادي الكلية</h3>
+                    <div class="flex flex-col md:flex-row gap-6">
+                        <div class="flex-1 bg-purple-50 p-6 rounded-xl border border-purple-100">
+                            <h4 class="font-bold text-purple-900 text-lg mb-3">عن النادي</h4>
+                            <p class="text-gray-700 text-sm leading-relaxed mb-3">الكيان الطلابي الذي يهتم بتنمية المهارات اللامنهجية للطلاب والطالبات وإقامة المعارض والفعاليات والمسابقات المتخصصة وصقل المواهب الجامعية</p>
+                        </div>
+                        <div class="flex-1 flex flex-col justify-center items-center bg-gray-50 border border-gray-200 rounded-xl p-6 border-dashed">
+                            <i data-lucide="leaf" class="text-gray-400 w-10 h-10 mb-4"></i>
+                            <p class="text-gray-500 text-center font-medium mb-4">بادر بالانضمام لنادي كليتك لتصنع الفارق</p>
+                            <a href="#" target="_blank" class="bg-purple-600 hover:bg-purple-700 text-white px-6 py-2 rounded-lg text-sm font-medium transition-colors flex items-center gap-2">معلومات النادي <i data-lucide="external-link" class="w-4 h-4"></i></a>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </div>
+
+        <!-- 5. الكلية الجامعية بالدرب -->
+        <div id="view-college-aldarb" class="view">
+            <div class="max-w-5xl mx-auto px-4 py-8">
+                <button onclick="navigateTo('academic')" class="flex items-center gap-2 text-gray-500 hover:text-indigo-600 transition-colors mb-6 font-medium bg-white px-4 py-2 rounded-lg border border-gray-200 shadow-sm w-fit"><i data-lucide="chevron-right" class="w-5 h-5"></i> العودة للكليات</button>
+                <div class="bg-indigo-900 text-white rounded-3xl p-8 mb-8 shadow-lg"><h2 class="text-3xl font-bold mb-2">الكلية الجامعية بالدرب</h2></div>
+                
+                <section class="bg-white rounded-2xl p-6 shadow-sm border border-gray-100 mb-8">
+                    <h3 class="text-2xl font-bold text-indigo-900 mb-6 flex items-center gap-2 border-b pb-4"><i data-lucide="book-open" class="text-indigo-600 w-6 h-6"></i> مصادر المعرفة في الكلية</h3>
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                        <div class="bg-blue-50 p-5 rounded-xl border border-blue-100">
+                            <h4 class="font-bold text-blue-900 text-lg mb-2">المكتبة العامة في الكلية</h4>
+                            <p class="text-gray-700 text-sm mb-4 leading-relaxed">مساحة هادئة توفر المصادر والكتب المطبوعة المتخصصة التي تدعم مناهج طلاب وطالبات الكلية</p>
+                            <div class="flex flex-col gap-2 text-sm text-gray-700 font-medium">
+                                <span class="flex items-center gap-2"><i data-lucide="clock" class="w-4 h-4 text-blue-600"></i> أوقات العمل: 8:00 صباحاً - 2:00 مساءً</span>
+                                <span class="flex items-center gap-2"><i data-lucide="map-pin" class="w-4 h-4 text-blue-600"></i> الموقع: داخل مقر الكلية</span>
+                            </div>
+                        </div>
+                        <div class="bg-indigo-50 p-5 rounded-xl border border-indigo-100 flex flex-col justify-between">
+                            <div>
+                                <h4 class="font-bold text-indigo-900 text-lg mb-2">المكتبة السعودية الرقمية (SDL)</h4>
+                                <p class="text-gray-700 text-sm mb-4 leading-relaxed">بوابتك لأكبر تجمع إلكتروني للمراجع والكتب والمقالات العلمية المحكمة على مستوى الشرق الأوسط</p>
+                            </div>
+                            <a href="https://www.jazanu.edu.sa/ar/administration/departments/managing-knowledge-resources/sdl-0" target="_blank" class="bg-indigo-600 hover:bg-indigo-700 text-white px-4 py-2 rounded-lg text-sm font-medium flex items-center justify-center gap-2 w-fit transition-colors">الدخول للمكتبة الرقمية <i data-lucide="external-link" class="w-4 h-4"></i></a>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="bg-white rounded-2xl p-6 shadow-sm border border-gray-100 mb-8"><h3 class="text-2xl font-bold text-indigo-900 mb-6 flex items-center gap-2 border-b pb-4"><i data-lucide="briefcase" class="text-indigo-600 w-6 h-6"></i> التخصصات المتاحة</h3>
+                    <div class="flex flex-wrap gap-3">
+                        <span class="bg-gray-50 text-gray-800 border border-gray-200 px-4 py-2 rounded-full text-sm font-medium hover:bg-indigo-50">تخصص الأحياء</span>
+                        <span class="bg-gray-50 text-gray-800 border border-gray-200 px-4 py-2 rounded-full text-sm font-medium hover:bg-indigo-50">تخصص الرياضيات</span>
+                        <span class="bg-gray-50 text-gray-800 border border-gray-200 px-4 py-2 rounded-full text-sm font-medium hover:bg-indigo-50">تخصص العلوم الطبية (تمريض)</span>
+                        <span class="bg-gray-50 text-gray-800 border border-gray-200 px-4 py-2 rounded-full text-sm font-medium hover:bg-indigo-50">تخصص إدارة الاعمال</span>
+                        <span class="bg-gray-50 text-gray-800 border border-gray-200 px-4 py-2 rounded-full text-sm font-medium hover:bg-indigo-50">تخصص اللغة الإنجليزية</span>
+                    </div>
+                </section>
+
+                <section class="bg-white rounded-2xl p-6 shadow-sm border border-gray-100 mb-8">
+                    <h3 class="text-2xl font-bold text-indigo-900 mb-6 flex items-center gap-2 border-b pb-4"><i data-lucide="users" class="text-indigo-600 w-6 h-6"></i> المجلس الاستشاري الطلابي</h3>
+                    <div class="bg-gradient-to-l from-blue-50 to-indigo-50 p-6 rounded-xl border border-blue-100 flex flex-col md:flex-row gap-6 items-center">
+                        <div class="w-20 h-20 bg-white rounded-full flex items-center justify-center shadow-sm shrink-0"><i data-lucide="users" class="text-blue-600 w-8 h-8"></i></div>
+                        <div class="w-full">
+                            <h4 class="font-bold text-gray-900 text-lg mb-2">عن المجلس</h4>
+                            <p class="text-gray-700 text-sm mb-4 leading-relaxed">هو حلقة الوصل بين الطلاب وعمادة الكلية يهدف لإيصال صوت الطلاب ومقترحاتهم ومناقشة التحديات للمساهمة في تطوير البيئة الأكاديمية والخدمات المقدمة</p>
+                            <div class="flex flex-wrap gap-3 text-sm mt-2">
+                                <span class="flex items-center gap-1 text-gray-700 bg-white px-3 py-2 rounded-lg border shadow-sm"><i data-lucide="map-pin" class="w-4 h-4 text-indigo-500"></i> الدور الأرضي بجانب مكتب شؤون الطلاب في البهو الرئيسي</span>
+                                <span class="flex items-center gap-1 text-gray-700 bg-white px-3 py-2 rounded-lg border shadow-sm"><i data-lucide="phone" class="w-4 h-4 text-indigo-500"></i> رقم التواصل: (يضاف لاحقاً)</span>
+                                <span class="flex items-center gap-1 text-gray-700 bg-white px-3 py-2 rounded-lg border shadow-sm"><i data-lucide="mail" class="w-4 h-4 text-indigo-500"></i> advisory@jazanu.edu.sa</span>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="bg-white rounded-2xl p-6 shadow-sm border border-gray-100 mb-8">
+                    <h3 class="text-2xl font-bold text-indigo-900 mb-6 flex items-center gap-2 border-b pb-4"><i data-lucide="heart-pulse" class="text-indigo-600 w-6 h-6"></i> نادي الكلية</h3>
+                    <div class="flex flex-col md:flex-row gap-6">
+                        <div class="flex-1 bg-purple-50 p-6 rounded-xl border border-purple-100">
+                            <h4 class="font-bold text-purple-900 text-lg mb-3">عن النادي</h4>
+                            <p class="text-gray-700 text-sm leading-relaxed mb-3">الكيان الطلابي الذي يهتم بتنمية المهارات اللامنهجية للطلاب والطالبات وإقامة المعارض والفعاليات والمسابقات المتخصصة وصقل المواهب الجامعية</p>
+                        </div>
+                        <div class="flex-1 flex flex-col justify-center items-center bg-gray-50 border border-gray-200 rounded-xl p-6 border-dashed">
+                            <i data-lucide="leaf" class="text-gray-400 w-10 h-10 mb-4"></i>
+                            <p class="text-gray-500 text-center font-medium mb-4">بادر بالانضمام لنادي كليتك لتصنع الفارق</p>
+                            <a href="#" target="_blank" class="bg-purple-600 hover:bg-purple-700 text-white px-6 py-2 rounded-lg text-sm font-medium transition-colors flex items-center gap-2">معلومات النادي <i data-lucide="external-link" class="w-4 h-4"></i></a>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </div>
+
+        <!-- 6. كلية التمريض والعلوم الصحية -->
+        <div id="view-college-nursing" class="view">
+            <div class="max-w-5xl mx-auto px-4 py-8">
+                <button onclick="navigateTo('academic')" class="flex items-center gap-2 text-gray-500 hover:text-indigo-600 transition-colors mb-6 font-medium bg-white px-4 py-2 rounded-lg border border-gray-200 shadow-sm w-fit"><i data-lucide="chevron-right" class="w-5 h-5"></i> العودة للكليات</button>
+                <div class="bg-indigo-900 text-white rounded-3xl p-8 mb-8 shadow-lg"><h2 class="text-3xl font-bold mb-2">كلية التمريض والعلوم الصحية</h2></div>
+                
+                <section class="bg-white rounded-2xl p-6 shadow-sm border border-gray-100 mb-8">
+                    <h3 class="text-2xl font-bold text-indigo-900 mb-6 flex items-center gap-2 border-b pb-4"><i data-lucide="book-open" class="text-indigo-600 w-6 h-6"></i> مصادر المعرفة في الكلية</h3>
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                        <div class="bg-blue-50 p-5 rounded-xl border border-blue-100">
+                            <h4 class="font-bold text-blue-900 text-lg mb-2">المكتبة العامة في الكلية</h4>
+                            <p class="text-gray-700 text-sm mb-4 leading-relaxed">مساحة هادئة توفر المصادر والكتب المطبوعة المتخصصة التي تدعم مناهج طلاب وطالبات الكلية</p>
+                            <div class="flex flex-col gap-2 text-sm text-gray-700 font-medium">
+                                <span class="flex items-center gap-2"><i data-lucide="clock" class="w-4 h-4 text-blue-600"></i> أوقات العمل: 8:00 صباحاً - 2:00 مساءً</span>
+                                <span class="flex items-center gap-2"><i data-lucide="map-pin" class="w-4 h-4 text-blue-600"></i> الموقع: داخل مقر الكلية</span>
+                            </div>
+                        </div>
+                        <div class="bg-indigo-50 p-5 rounded-xl border border-indigo-100 flex flex-col justify-between">
+                            <div>
+                                <h4 class="font-bold text-indigo-900 text-lg mb-2">المكتبة السعودية الرقمية (SDL)</h4>
+                                <p class="text-gray-700 text-sm mb-4 leading-relaxed">بوابتك لأكبر تجمع إلكتروني للمراجع والكتب والمقالات العلمية المحكمة على مستوى الشرق الأوسط</p>
+                            </div>
+                            <a href="https://www.jazanu.edu.sa/ar/administration/departments/managing-knowledge-resources/sdl-0" target="_blank" class="bg-indigo-600 hover:bg-indigo-700 text-white px-4 py-2 rounded-lg text-sm font-medium flex items-center justify-center gap-2 w-fit transition-colors">الدخول للمكتبة الرقمية <i data-lucide="external-link" class="w-4 h-4"></i></a>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="bg-white rounded-2xl p-6 shadow-sm border border-gray-100 mb-8"><h3 class="text-2xl font-bold text-indigo-900 mb-6 flex items-center gap-2 border-b pb-4"><i data-lucide="briefcase" class="text-indigo-600 w-6 h-6"></i> التخصصات المتاحة</h3>
+                    <div class="flex flex-wrap gap-3">
+                        <span class="bg-gray-50 text-gray-800 border border-gray-200 px-4 py-2 rounded-full text-sm font-medium hover:bg-indigo-50">تخصص بكالوريوس التمريض</span>
+                        <span class="bg-gray-50 text-gray-800 border border-gray-200 px-4 py-2 rounded-full text-sm font-medium hover:bg-indigo-50">تخصص بكالوريوس الإسعاف والطوارئ</span>
+                        <span class="bg-gray-50 text-gray-800 border border-gray-200 px-4 py-2 rounded-full text-sm font-medium hover:bg-indigo-50">تخصص بكالوريوس العلاج التنفسي</span>
+                        <span class="bg-gray-50 text-gray-800 border border-gray-200 px-4 py-2 rounded-full text-sm font-medium hover:bg-indigo-50">تخصص بكالوريوس تقنية المختبرات الطبية</span>
+                        <span class="bg-gray-50 text-gray-800 border border-gray-200 px-4 py-2 rounded-full text-sm font-medium hover:bg-indigo-50">تخصص ماجستير علوم المختبرات الإكلينيكية</span>
+                        <span class="bg-gray-50 text-gray-800 border border-gray-200 px-4 py-2 rounded-full text-sm font-medium hover:bg-indigo-50">تخصص بكالوريوس التغذية الإكلينيكية</span>
+                        <span class="bg-gray-50 text-gray-800 border border-gray-200 px-4 py-2 rounded-full text-sm font-medium hover:bg-indigo-50">تخصص بكالوريوس العلاج الطبيعي</span>
+                        <span class="bg-gray-50 text-gray-800 border border-gray-200 px-4 py-2 rounded-full text-sm font-medium hover:bg-indigo-50">تخصص بكالوريوس الأشعة التشخيصية</span>
+                        <span class="bg-gray-50 text-gray-800 border border-gray-200 px-4 py-2 rounded-full text-sm font-medium hover:bg-indigo-50">تخصص بكالوريوس الوبائيات</span>
+                        <span class="bg-gray-50 text-gray-800 border border-gray-200 px-4 py-2 rounded-full text-sm font-medium hover:bg-indigo-50">تخصص بكالوريوس المعلوماتية الصحية</span>
+                        <span class="bg-gray-50 text-gray-800 border border-gray-200 px-4 py-2 rounded-full text-sm font-medium hover:bg-indigo-50">تخصص بكالوريوس التثقيف والتعزيز الصحي</span>
+                        <span class="bg-gray-50 text-gray-800 border border-gray-200 px-4 py-2 rounded-full text-sm font-medium hover:bg-indigo-50">تخصص ماجستير الصحة العامة في الوبائيات والإحصاء الحيوي</span>
+                    </div>
+                </section>
+
+                <section class="bg-white rounded-2xl p-6 shadow-sm border border-gray-100 mb-8">
+                    <h3 class="text-2xl font-bold text-indigo-900 mb-6 flex items-center gap-2 border-b pb-4"><i data-lucide="users" class="text-indigo-600 w-6 h-6"></i> المجلس الاستشاري الطلابي</h3>
+                    <div class="bg-gradient-to-l from-blue-50 to-indigo-50 p-6 rounded-xl border border-blue-100 flex flex-col md:flex-row gap-6 items-center">
+                        <div class="w-20 h-20 bg-white rounded-full flex items-center justify-center shadow-sm shrink-0"><i data-lucide="users" class="text-blue-600 w-8 h-8"></i></div>
+                        <div class="w-full">
+                            <h4 class="font-bold text-gray-900 text-lg mb-2">عن المجلس</h4>
+                            <p class="text-gray-700 text-sm mb-4 leading-relaxed">هو حلقة الوصل بين الطلاب وعمادة الكلية يهدف لإيصال صوت الطلاب ومقترحاتهم ومناقشة التحديات للمساهمة في تطوير البيئة الأكاديمية والخدمات المقدمة</p>
+                            <div class="flex flex-wrap gap-3 text-sm mt-2">
+                                <span class="flex items-center gap-1 text-gray-700 bg-white px-3 py-2 rounded-lg border shadow-sm"><i data-lucide="map-pin" class="w-4 h-4 text-indigo-500"></i> الدور الأرضي بجانب مكتب شؤون الطلاب في البهو الرئيسي</span>
+                                <span class="flex items-center gap-1 text-gray-700 bg-white px-3 py-2 rounded-lg border shadow-sm"><i data-lucide="phone" class="w-4 h-4 text-indigo-500"></i> رقم التواصل: (يضاف لاحقاً)</span>
+                                <span class="flex items-center gap-1 text-gray-700 bg-white px-3 py-2 rounded-lg border shadow-sm"><i data-lucide="mail" class="w-4 h-4 text-indigo-500"></i> advisory@jazanu.edu.sa</span>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="bg-white rounded-2xl p-6 shadow-sm border border-gray-100 mb-8">
+                    <h3 class="text-2xl font-bold text-indigo-900 mb-6 flex items-center gap-2 border-b pb-4"><i data-lucide="heart-pulse" class="text-indigo-600 w-6 h-6"></i> نادي الكلية</h3>
+                    <div class="flex flex-col md:flex-row gap-6">
+                        <div class="flex-1 bg-purple-50 p-6 rounded-xl border border-purple-100">
+                            <h4 class="font-bold text-purple-900 text-lg mb-3">عن النادي</h4>
+                            <p class="text-gray-700 text-sm leading-relaxed mb-3">الكيان الطلابي الذي يهتم بتنمية المهارات اللامنهجية للطلاب والطالبات وإقامة المعارض والفعاليات والمسابقات المتخصصة وصقل المواهب الجامعية</p>
+                        </div>
+                        <div class="flex-1 flex flex-col justify-center items-center bg-gray-50 border border-gray-200 rounded-xl p-6 border-dashed">
+                            <i data-lucide="leaf" class="text-gray-400 w-10 h-10 mb-4"></i>
+                            <p class="text-gray-500 text-center font-medium mb-4">بادر بالانضمام لنادي كليتك لتصنع الفارق</p>
+                            <a href="#" target="_blank" class="bg-purple-600 hover:bg-purple-700 text-white px-6 py-2 rounded-lg text-sm font-medium transition-colors flex items-center gap-2">معلومات النادي <i data-lucide="external-link" class="w-4 h-4"></i></a>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </div>
+
+        <!-- 7. كلية طب الأسنان -->
+        <div id="view-college-dentistry" class="view">
+            <div class="max-w-5xl mx-auto px-4 py-8">
+                <button onclick="navigateTo('academic')" class="flex items-center gap-2 text-gray-500 hover:text-indigo-600 transition-colors mb-6 font-medium bg-white px-4 py-2 rounded-lg border border-gray-200 shadow-sm w-fit"><i data-lucide="chevron-right" class="w-5 h-5"></i> العودة للكليات</button>
+                <div class="bg-indigo-900 text-white rounded-3xl p-8 mb-8 shadow-lg"><h2 class="text-3xl font-bold mb-2">كلية طب الأسنان</h2></div>
+                
+                <section class="bg-white rounded-2xl p-6 shadow-sm border border-gray-100 mb-8">
+                    <h3 class="text-2xl font-bold text-indigo-900 mb-6 flex items-center gap-2 border-b pb-4"><i data-lucide="book-open" class="text-indigo-600 w-6 h-6"></i> مصادر المعرفة في الكلية</h3>
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                        <div class="bg-blue-50 p-5 rounded-xl border border-blue-100">
+                            <h4 class="font-bold text-blue-900 text-lg mb-2">المكتبة العامة في الكلية</h4>
+                            <p class="text-gray-700 text-sm mb-4 leading-relaxed">مساحة هادئة توفر المصادر والكتب المطبوعة المتخصصة التي تدعم مناهج طلاب وطالبات الكلية</p>
+                            <div class="flex flex-col gap-2 text-sm text-gray-700 font-medium">
+                                <span class="flex items-center gap-2"><i data-lucide="clock" class="w-4 h-4 text-blue-600"></i> أوقات العمل: 8:00 صباحاً - 2:00 مساءً</span>
+                                <span class="flex items-center gap-2"><i data-lucide="map-pin" class="w-4 h-4 text-blue-600"></i> الموقع: داخل مقر الكلية</span>
+                            </div>
+                        </div>
+                        <div class="bg-indigo-50 p-5 rounded-xl border border-indigo-100 flex flex-col justify-between">
+                            <div>
+                                <h4 class="font-bold text-indigo-900 text-lg mb-2">المكتبة السعودية الرقمية (SDL)</h4>
+                                <p class="text-gray-700 text-sm mb-4 leading-relaxed">بوابتك لأكبر تجمع إلكتروني للمراجع والكتب والمقالات العلمية المحكمة على مستوى الشرق الأوسط</p>
+                            </div>
+                            <a href="https://www.jazanu.edu.sa/ar/administration/departments/managing-knowledge-resources/sdl-0" target="_blank" class="bg-indigo-600 hover:bg-indigo-700 text-white px-4 py-2 rounded-lg text-sm font-medium flex items-center justify-center gap-2 w-fit transition-colors">الدخول للمكتبة الرقمية <i data-lucide="external-link" class="w-4 h-4"></i></a>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="bg-white rounded-2xl p-6 shadow-sm border border-gray-100 mb-8"><h3 class="text-2xl font-bold text-indigo-900 mb-6 flex items-center gap-2 border-b pb-4"><i data-lucide="briefcase" class="text-indigo-600 w-6 h-6"></i> التخصصات المتاحة</h3>
+                    <div class="flex flex-wrap gap-3"><span class="bg-gray-50 text-gray-800 border border-gray-200 px-4 py-2 rounded-full text-sm font-medium hover:bg-indigo-50">تخصص طب وجراحة الفم والأسنان</span></div>
+                </section>
+
+                <section class="bg-white rounded-2xl p-6 shadow-sm border border-gray-100 mb-8">
+                    <h3 class="text-2xl font-bold text-indigo-900 mb-6 flex items-center gap-2 border-b pb-4"><i data-lucide="users" class="text-indigo-600 w-6 h-6"></i> المجلس الاستشاري الطلابي</h3>
+                    <div class="bg-gradient-to-l from-blue-50 to-indigo-50 p-6 rounded-xl border border-blue-100 flex flex-col md:flex-row gap-6 items-center">
+                        <div class="w-20 h-20 bg-white rounded-full flex items-center justify-center shadow-sm shrink-0"><i data-lucide="users" class="text-blue-600 w-8 h-8"></i></div>
+                        <div class="w-full">
+                            <h4 class="font-bold text-gray-900 text-lg mb-2">عن المجلس</h4>
+                            <p class="text-gray-700 text-sm mb-4 leading-relaxed">هو حلقة الوصل بين الطلاب وعمادة الكلية يهدف لإيصال صوت الطلاب ومقترحاتهم ومناقشة التحديات للمساهمة في تطوير البيئة الأكاديمية والخدمات المقدمة</p>
+                            <div class="flex flex-wrap gap-3 text-sm mt-2">
+                                <span class="flex items-center gap-1 text-gray-700 bg-white px-3 py-2 rounded-lg border shadow-sm"><i data-lucide="map-pin" class="w-4 h-4 text-indigo-500"></i> الدور الأرضي بجانب مكتب شؤون الطلاب في البهو الرئيسي</span>
+                                <span class="flex items-center gap-1 text-gray-700 bg-white px-3 py-2 rounded-lg border shadow-sm"><i data-lucide="phone" class="w-4 h-4 text-indigo-500"></i> رقم التواصل: (يضاف لاحقاً)</span>
+                                <span class="flex items-center gap-1 text-gray-700 bg-white px-3 py-2 rounded-lg border shadow-sm"><i data-lucide="mail" class="w-4 h-4 text-indigo-500"></i> advisory@jazanu.edu.sa</span>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="bg-white rounded-2xl p-6 shadow-sm border border-gray-100 mb-8">
+                    <h3 class="text-2xl font-bold text-indigo-900 mb-6 flex items-center gap-2 border-b pb-4"><i data-lucide="heart-pulse" class="text-indigo-600 w-6 h-6"></i> نادي الكلية</h3>
+                    <div class="flex flex-col md:flex-row gap-6">
+                        <div class="flex-1 bg-purple-50 p-6 rounded-xl border border-purple-100">
+                            <h4 class="font-bold text-purple-900 text-lg mb-3">عن النادي</h4>
+                            <p class="text-gray-700 text-sm leading-relaxed mb-3">الكيان الطلابي الذي يهتم بتنمية المهارات اللامنهجية للطلاب والطالبات وإقامة المعارض والفعاليات والمسابقات المتخصصة وصقل المواهب الجامعية</p>
+                        </div>
+                        <div class="flex-1 flex flex-col justify-center items-center bg-gray-50 border border-gray-200 rounded-xl p-6 border-dashed">
+                            <i data-lucide="leaf" class="text-gray-400 w-10 h-10 mb-4"></i>
+                            <p class="text-gray-500 text-center font-medium mb-4">بادر بالانضمام لنادي كليتك لتصنع الفارق</p>
+                            <a href="#" target="_blank" class="bg-purple-600 hover:bg-purple-700 text-white px-6 py-2 rounded-lg text-sm font-medium transition-colors flex items-center gap-2">معلومات النادي <i data-lucide="external-link" class="w-4 h-4"></i></a>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </div>
+
+        <!-- 8. كلية الصيدلة -->
+        <div id="view-college-pharmacy" class="view">
+            <div class="max-w-5xl mx-auto px-4 py-8">
+                <button onclick="navigateTo('academic')" class="flex items-center gap-2 text-gray-500 hover:text-indigo-600 transition-colors mb-6 font-medium bg-white px-4 py-2 rounded-lg border border-gray-200 shadow-sm w-fit"><i data-lucide="chevron-right" class="w-5 h-5"></i> العودة للكليات</button>
+                <div class="bg-indigo-900 text-white rounded-3xl p-8 mb-8 shadow-lg"><h2 class="text-3xl font-bold mb-2">كلية الصيدلة</h2></div>
+                
+                <section class="bg-white rounded-2xl p-6 shadow-sm border border-gray-100 mb-8">
+                    <h3 class="text-2xl font-bold text-indigo-900 mb-6 flex items-center gap-2 border-b pb-4"><i data-lucide="book-open" class="text-indigo-600 w-6 h-6"></i> مصادر المعرفة في الكلية</h3>
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                        <div class="bg-blue-50 p-5 rounded-xl border border-blue-100">
+                            <h4 class="font-bold text-blue-900 text-lg mb-2">المكتبة العامة في الكلية</h4>
+                            <p class="text-gray-700 text-sm mb-4 leading-relaxed">مساحة هادئة توفر المصادر والكتب المطبوعة المتخصصة التي تدعم مناهج طلاب وطالبات الكلية</p>
+                            <div class="flex flex-col gap-2 text-sm text-gray-700 font-medium">
+                                <span class="flex items-center gap-2"><i data-lucide="clock" class="w-4 h-4 text-blue-600"></i> أوقات العمل: 8:00 صباحاً - 2:00 مساءً</span>
+                                <span class="flex items-center gap-2"><i data-lucide="map-pin" class="w-4 h-4 text-blue-600"></i> الموقع: داخل مقر الكلية</span>
+                            </div>
+                        </div>
+                        <div class="bg-indigo-50 p-5 rounded-xl border border-indigo-100 flex flex-col justify-between">
+                            <div>
+                                <h4 class="font-bold text-indigo-900 text-lg mb-2">المكتبة السعودية الرقمية (SDL)</h4>
+                                <p class="text-gray-700 text-sm mb-4 leading-relaxed">بوابتك لأكبر تجمع إلكتروني للمراجع والكتب والمقالات العلمية المحكمة على مستوى الشرق الأوسط</p>
+                            </div>
+                            <a href="https://www.jazanu.edu.sa/ar/administration/departments/managing-knowledge-resources/sdl-0" target="_blank" class="bg-indigo-600 hover:bg-indigo-700 text-white px-4 py-2 rounded-lg text-sm font-medium flex items-center justify-center gap-2 w-fit transition-colors">الدخول للمكتبة الرقمية <i data-lucide="external-link" class="w-4 h-4"></i></a>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="bg-white rounded-2xl p-6 shadow-sm border border-gray-100 mb-8"><h3 class="text-2xl font-bold text-indigo-900 mb-6 flex items-center gap-2 border-b pb-4"><i data-lucide="briefcase" class="text-indigo-600 w-6 h-6"></i> التخصصات المتاحة</h3>
+                    <div class="flex flex-wrap gap-3">
+                        <span class="bg-gray-50 text-gray-800 border border-gray-200 px-4 py-2 rounded-full text-sm font-medium hover:bg-indigo-50">تخصص دكتور صيدلي</span>
+                        <span class="bg-gray-50 text-gray-800 border border-gray-200 px-4 py-2 rounded-full text-sm font-medium hover:bg-indigo-50">تخصص ماجستير في علم السموم التطبيقي</span>
+                    </div>
+                </section>
+
+                <section class="bg-white rounded-2xl p-6 shadow-sm border border-gray-100 mb-8">
+                    <h3 class="text-2xl font-bold text-indigo-900 mb-6 flex items-center gap-2 border-b pb-4"><i data-lucide="users" class="text-indigo-600 w-6 h-6"></i> المجلس الاستشاري الطلابي</h3>
+                    <div class="bg-gradient-to-l from-blue-50 to-indigo-50 p-6 rounded-xl border border-blue-100 flex flex-col md:flex-row gap-6 items-center">
+                        <div class="w-20 h-20 bg-white rounded-full flex items-center justify-center shadow-sm shrink-0"><i data-lucide="users" class="text-blue-600 w-8 h-8"></i></div>
+                        <div class="w-full">
+                            <h4 class="font-bold text-gray-900 text-lg mb-2">عن المجلس</h4>
+                            <p class="text-gray-700 text-sm mb-4 leading-relaxed">هو حلقة الوصل بين الطلاب وعمادة الكلية يهدف لإيصال صوت الطلاب ومقترحاتهم ومناقشة التحديات للمساهمة في تطوير البيئة الأكاديمية والخدمات المقدمة</p>
+                            <div class="flex flex-wrap gap-3 text-sm mt-2">
+                                <span class="flex items-center gap-1 text-gray-700 bg-white px-3 py-2 rounded-lg border shadow-sm"><i data-lucide="map-pin" class="w-4 h-4 text-indigo-500"></i> الدور الأرضي بجانب مكتب شؤون الطلاب في البهو الرئيسي</span>
+                                <span class="flex items-center gap-1 text-gray-700 bg-white px-3 py-2 rounded-lg border shadow-sm"><i data-lucide="phone" class="w-4 h-4 text-indigo-500"></i> رقم التواصل: (يضاف لاحقاً)</span>
+                                <span class="flex items-center gap-1 text-gray-700 bg-white px-3 py-2 rounded-lg border shadow-sm"><i data-lucide="mail" class="w-4 h-4 text-indigo-500"></i> advisory@jazanu.edu.sa</span>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="bg-white rounded-2xl p-6 shadow-sm border border-gray-100 mb-8">
+                    <h3 class="text-2xl font-bold text-indigo-900 mb-6 flex items-center gap-2 border-b pb-4"><i data-lucide="heart-pulse" class="text-indigo-600 w-6 h-6"></i> نادي الكلية</h3>
+                    <div class="flex flex-col md:flex-row gap-6">
+                        <div class="flex-1 bg-purple-50 p-6 rounded-xl border border-purple-100">
+                            <h4 class="font-bold text-purple-900 text-lg mb-3">عن النادي</h4>
+                            <p class="text-gray-700 text-sm leading-relaxed mb-3">الكيان الطلابي الذي يهتم بتنمية المهارات اللامنهجية للطلاب والطالبات وإقامة المعارض والفعاليات والمسابقات المتخصصة وصقل المواهب الجامعية</p>
+                        </div>
+                        <div class="flex-1 flex flex-col justify-center items-center bg-gray-50 border border-gray-200 rounded-xl p-6 border-dashed">
+                            <i data-lucide="leaf" class="text-gray-400 w-10 h-10 mb-4"></i>
+                            <p class="text-gray-500 text-center font-medium mb-4">بادر بالانضمام لنادي كليتك لتصنع الفارق</p>
+                            <a href="#" target="_blank" class="bg-purple-600 hover:bg-purple-700 text-white px-6 py-2 rounded-lg text-sm font-medium transition-colors flex items-center gap-2">معلومات النادي <i data-lucide="external-link" class="w-4 h-4"></i></a>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </div>
+
+        <!-- 9. كلية العلوم -->
+        <div id="view-college-science" class="view">
+            <div class="max-w-5xl mx-auto px-4 py-8">
+                <button onclick="navigateTo('academic')" class="flex items-center gap-2 text-gray-500 hover:text-indigo-600 transition-colors mb-6 font-medium bg-white px-4 py-2 rounded-lg border border-gray-200 shadow-sm w-fit"><i data-lucide="chevron-right" class="w-5 h-5"></i> العودة للكليات</button>
+                <div class="bg-indigo-900 text-white rounded-3xl p-8 mb-8 shadow-lg"><h2 class="text-3xl font-bold mb-2">كلية العلوم</h2></div>
+                
+                <section class="bg-white rounded-2xl p-6 shadow-sm border border-gray-100 mb-8">
+                    <h3 class="text-2xl font-bold text-indigo-900 mb-6 flex items-center gap-2 border-b pb-4"><i data-lucide="book-open" class="text-indigo-600 w-6 h-6"></i> مصادر المعرفة في الكلية</h3>
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                        <div class="bg-blue-50 p-5 rounded-xl border border-blue-100">
+                            <h4 class="font-bold text-blue-900 text-lg mb-2">المكتبة العامة في الكلية</h4>
+                            <p class="text-gray-700 text-sm mb-4 leading-relaxed">مساحة هادئة توفر المصادر والكتب المطبوعة المتخصصة التي تدعم مناهج طلاب وطالبات الكلية</p>
+                            <div class="flex flex-col gap-2 text-sm text-gray-700 font-medium">
+                                <span class="flex items-center gap-2"><i data-lucide="clock" class="w-4 h-4 text-blue-600"></i> أوقات العمل: 8:00 صباحاً - 2:00 مساءً</span>
+                                <span class="flex items-center gap-2"><i data-lucide="map-pin" class="w-4 h-4 text-blue-600"></i> الموقع: داخل مقر الكلية</span>
+                            </div>
+                        </div>
+                        <div class="bg-indigo-50 p-5 rounded-xl border border-indigo-100 flex flex-col justify-between">
+                            <div>
+                                <h4 class="font-bold text-indigo-900 text-lg mb-2">المكتبة السعودية الرقمية (SDL)</h4>
+                                <p class="text-gray-700 text-sm mb-4 leading-relaxed">بوابتك لأكبر تجمع إلكتروني للمراجع والكتب والمقالات العلمية المحكمة على مستوى الشرق الأوسط</p>
+                            </div>
+                            <a href="https://www.jazanu.edu.sa/ar/administration/departments/managing-knowledge-resources/sdl-0" target="_blank" class="bg-indigo-600 hover:bg-indigo-700 text-white px-4 py-2 rounded-lg text-sm font-medium flex items-center justify-center gap-2 w-fit transition-colors">الدخول للمكتبة الرقمية <i data-lucide="external-link" class="w-4 h-4"></i></a>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="bg-white rounded-2xl p-6 shadow-sm border border-gray-100 mb-8"><h3 class="text-2xl font-bold text-indigo-900 mb-6 flex items-center gap-2 border-b pb-4"><i data-lucide="briefcase" class="text-indigo-600 w-6 h-6"></i> التخصصات المتاحة</h3>
+                    <div class="flex flex-wrap gap-3">
+                        <span class="bg-gray-50 text-gray-800 border border-gray-200 px-4 py-2 rounded-full text-sm font-medium hover:bg-indigo-50">تخصص بكالوريوس الكيمياء</span>
+                        <span class="bg-gray-50 text-gray-800 border border-gray-200 px-4 py-2 rounded-full text-sm font-medium hover:bg-indigo-50">تخصص بكالوريوس الفيزياء</span>
+                        <span class="bg-gray-50 text-gray-800 border border-gray-200 px-4 py-2 rounded-full text-sm font-medium hover:bg-indigo-50">تخصص بكالوريوس الكيمياء الصناعية</span>
+                        <span class="bg-gray-50 text-gray-800 border border-gray-200 px-4 py-2 rounded-full text-sm font-medium hover:bg-indigo-50">تخصص بكالوريوس الطاقة المتجددة</span>
+                        <span class="bg-gray-50 text-gray-800 border border-gray-200 px-4 py-2 rounded-full text-sm font-medium hover:bg-indigo-50">تخصص بكالوريوس الأحياء</span>
+                        <span class="bg-gray-50 text-gray-800 border border-gray-200 px-4 py-2 rounded-full text-sm font-medium hover:bg-indigo-50">تخصص الرياضيات</span>
+                        <span class="bg-gray-50 text-gray-800 border border-gray-200 px-4 py-2 rounded-full text-sm font-medium hover:bg-indigo-50">تخصص الرياضيات والعلوم الاكتيوارية</span>
+                        <span class="bg-gray-50 text-gray-800 border border-gray-200 px-4 py-2 rounded-full text-sm font-medium hover:bg-indigo-50">تخصص الرياضيات وعلوم البيانات</span>
+                    </div>
+                </section>
+
+                <section class="bg-white rounded-2xl p-6 shadow-sm border border-gray-100 mb-8">
+                    <h3 class="text-2xl font-bold text-indigo-900 mb-6 flex items-center gap-2 border-b pb-4"><i data-lucide="users" class="text-indigo-600 w-6 h-6"></i> المجلس الاستشاري الطلابي</h3>
+                    <div class="bg-gradient-to-l from-blue-50 to-indigo-50 p-6 rounded-xl border border-blue-100 flex flex-col md:flex-row gap-6 items-center">
+                        <div class="w-20 h-20 bg-white rounded-full flex items-center justify-center shadow-sm shrink-0"><i data-lucide="users" class="text-blue-600 w-8 h-8"></i></div>
+                        <div class="w-full">
+                            <h4 class="font-bold text-gray-900 text-lg mb-2">عن المجلس</h4>
+                            <p class="text-gray-700 text-sm mb-4 leading-relaxed">هو حلقة الوصل بين الطلاب وعمادة الكلية يهدف لإيصال صوت الطلاب ومقترحاتهم ومناقشة التحديات للمساهمة في تطوير البيئة الأكاديمية والخدمات المقدمة</p>
+                            <div class="flex flex-wrap gap-3 text-sm mt-2">
+                                <span class="flex items-center gap-1 text-gray-700 bg-white px-3 py-2 rounded-lg border shadow-sm"><i data-lucide="map-pin" class="w-4 h-4 text-indigo-500"></i> الدور الأرضي بجانب مكتب شؤون الطلاب في البهو الرئيسي</span>
+                                <span class="flex items-center gap-1 text-gray-700 bg-white px-3 py-2 rounded-lg border shadow-sm"><i data-lucide="phone" class="w-4 h-4 text-indigo-500"></i> رقم التواصل: (يضاف لاحقاً)</span>
+                                <span class="flex items-center gap-1 text-gray-700 bg-white px-3 py-2 rounded-lg border shadow-sm"><i data-lucide="mail" class="w-4 h-4 text-indigo-500"></i> advisory@jazanu.edu.sa</span>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="bg-white rounded-2xl p-6 shadow-sm border border-gray-100 mb-8">
+                    <h3 class="text-2xl font-bold text-indigo-900 mb-6 flex items-center gap-2 border-b pb-4"><i data-lucide="heart-pulse" class="text-indigo-600 w-6 h-6"></i> نادي الكلية</h3>
+                    <div class="flex flex-col md:flex-row gap-6">
+                        <div class="flex-1 bg-purple-50 p-6 rounded-xl border border-purple-100">
+                            <h4 class="font-bold text-purple-900 text-lg mb-3">عن النادي</h4>
+                            <p class="text-gray-700 text-sm leading-relaxed mb-3">الكيان الطلابي الذي يهتم بتنمية المهارات اللامنهجية للطلاب والطالبات وإقامة المعارض والفعاليات والمسابقات المتخصصة وصقل المواهب الجامعية</p>
+                        </div>
+                        <div class="flex-1 flex flex-col justify-center items-center bg-gray-50 border border-gray-200 rounded-xl p-6 border-dashed">
+                            <i data-lucide="leaf" class="text-gray-400 w-10 h-10 mb-4"></i>
+                            <p class="text-gray-500 text-center font-medium mb-4">بادر بالانضمام لنادي كليتك لتصنع الفارق</p>
+                            <a href="#" target="_blank" class="bg-purple-600 hover:bg-purple-700 text-white px-6 py-2 rounded-lg text-sm font-medium transition-colors flex items-center gap-2">معلومات النادي <i data-lucide="external-link" class="w-4 h-4"></i></a>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </div>
+
+        <!-- 10. كلية الأعمال -->
+        <div id="view-college-business" class="view">
+            <div class="max-w-5xl mx-auto px-4 py-8">
+                <button onclick="navigateTo('academic')" class="flex items-center gap-2 text-gray-500 hover:text-indigo-600 transition-colors mb-6 font-medium bg-white px-4 py-2 rounded-lg border border-gray-200 shadow-sm w-fit"><i data-lucide="chevron-right" class="w-5 h-5"></i> العودة للكليات</button>
+                <div class="bg-indigo-900 text-white rounded-3xl p-8 mb-8 shadow-lg"><h2 class="text-3xl font-bold mb-2">كلية الأعمال</h2></div>
+                
+                <section class="bg-white rounded-2xl p-6 shadow-sm border border-gray-100 mb-8">
+                    <h3 class="text-2xl font-bold text-indigo-900 mb-6 flex items-center gap-2 border-b pb-4"><i data-lucide="book-open" class="text-indigo-600 w-6 h-6"></i> مصادر المعرفة في الكلية</h3>
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                        <div class="bg-blue-50 p-5 rounded-xl border border-blue-100">
+                            <h4 class="font-bold text-blue-900 text-lg mb-2">المكتبة العامة في الكلية</h4>
+                            <p class="text-gray-700 text-sm mb-4 leading-relaxed">مساحة هادئة توفر المصادر والكتب المطبوعة المتخصصة التي تدعم مناهج طلاب وطالبات الكلية</p>
+                            <div class="flex flex-col gap-2 text-sm text-gray-700 font-medium">
+                                <span class="flex items-center gap-2"><i data-lucide="clock" class="w-4 h-4 text-blue-600"></i> أوقات العمل: 8:00 صباحاً - 2:00 مساءً</span>
+                                <span class="flex items-center gap-2"><i data-lucide="map-pin" class="w-4 h-4 text-blue-600"></i> الموقع: داخل مقر الكلية</span>
+                            </div>
+                        </div>
+                        <div class="bg-indigo-50 p-5 rounded-xl border border-indigo-100 flex flex-col justify-between">
+                            <div>
+                                <h4 class="font-bold text-indigo-900 text-lg mb-2">المكتبة السعودية الرقمية (SDL)</h4>
+                                <p class="text-gray-700 text-sm mb-4 leading-relaxed">بوابتك لأكبر تجمع إلكتروني للمراجع والكتب والمقالات العلمية المحكمة على مستوى الشرق الأوسط</p>
+                            </div>
+                            <a href="https://www.jazanu.edu.sa/ar/administration/departments/managing-knowledge-resources/sdl-0" target="_blank" class="bg-indigo-600 hover:bg-indigo-700 text-white px-4 py-2 rounded-lg text-sm font-medium flex items-center justify-center gap-2 w-fit transition-colors">الدخول للمكتبة الرقمية <i data-lucide="external-link" class="w-4 h-4"></i></a>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="bg-white rounded-2xl p-6 shadow-sm border border-gray-100 mb-8"><h3 class="text-2xl font-bold text-indigo-900 mb-6 flex items-center gap-2 border-b pb-4"><i data-lucide="briefcase" class="text-indigo-600 w-6 h-6"></i> التخصصات المتاحة</h3>
+                    <div class="flex flex-wrap gap-3">
+                        <span class="bg-gray-50 text-gray-800 border border-gray-200 px-4 py-2 rounded-full text-sm font-medium hover:bg-indigo-50">تخصص المالية</span>
+                        <span class="bg-gray-50 text-gray-800 border border-gray-200 px-4 py-2 rounded-full text-sm font-medium hover:bg-indigo-50">تخصص المحاسبة</span>
+                        <span class="bg-gray-50 text-gray-800 border border-gray-200 px-4 py-2 rounded-full text-sm font-medium hover:bg-indigo-50">تخصص بكالوريوس نظم المعلومات الإدارية</span>
+                        <span class="bg-gray-50 text-gray-800 border border-gray-200 px-4 py-2 rounded-full text-sm font-medium hover:bg-indigo-50">تخصص بكالوريوس إدارة الاعمال</span>
+                        <span class="bg-gray-50 text-gray-800 border border-gray-200 px-4 py-2 rounded-full text-sm font-medium hover:bg-indigo-50">تخصص بكالوريوس التسويق والتجارة الالكترونية</span>
+                        <span class="bg-gray-50 text-gray-800 border border-gray-200 px-4 py-2 rounded-full text-sm font-medium hover:bg-indigo-50">تخصص الإدارة السياحية والفندقية</span>
+                        <span class="bg-gray-50 text-gray-800 border border-gray-200 px-4 py-2 rounded-full text-sm font-medium hover:bg-indigo-50">تخصص ماجستير إدارة الأعمال التنفيذي</span>
+                    </div>
+                </section>
+
+                <section class="bg-white rounded-2xl p-6 shadow-sm border border-gray-100 mb-8">
+                    <h3 class="text-2xl font-bold text-indigo-900 mb-6 flex items-center gap-2 border-b pb-4"><i data-lucide="users" class="text-indigo-600 w-6 h-6"></i> المجلس الاستشاري الطلابي</h3>
+                    <div class="bg-gradient-to-l from-blue-50 to-indigo-50 p-6 rounded-xl border border-blue-100 flex flex-col md:flex-row gap-6 items-center">
+                        <div class="w-20 h-20 bg-white rounded-full flex items-center justify-center shadow-sm shrink-0"><i data-lucide="users" class="text-blue-600 w-8 h-8"></i></div>
+                        <div class="w-full">
+                            <h4 class="font-bold text-gray-900 text-lg mb-2">عن المجلس</h4>
+                            <p class="text-gray-700 text-sm mb-4 leading-relaxed">هو حلقة الوصل بين الطلاب وعمادة الكلية يهدف لإيصال صوت الطلاب ومقترحاتهم ومناقشة التحديات للمساهمة في تطوير البيئة الأكاديمية والخدمات المقدمة</p>
+                            <div class="flex flex-wrap gap-3 text-sm mt-2">
+                                <span class="flex items-center gap-1 text-gray-700 bg-white px-3 py-2 rounded-lg border shadow-sm"><i data-lucide="map-pin" class="w-4 h-4 text-indigo-500"></i> الدور الأرضي بجانب مكتب شؤون الطلاب في البهو الرئيسي</span>
+                                <span class="flex items-center gap-1 text-gray-700 bg-white px-3 py-2 rounded-lg border shadow-sm"><i data-lucide="phone" class="w-4 h-4 text-indigo-500"></i> رقم التواصل: (يضاف لاحقاً)</span>
+                                <span class="flex items-center gap-1 text-gray-700 bg-white px-3 py-2 rounded-lg border shadow-sm"><i data-lucide="mail" class="w-4 h-4 text-indigo-500"></i> advisory@jazanu.edu.sa</span>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="bg-white rounded-2xl p-6 shadow-sm border border-gray-100 mb-8">
+                    <h3 class="text-2xl font-bold text-indigo-900 mb-6 flex items-center gap-2 border-b pb-4"><i data-lucide="heart-pulse" class="text-indigo-600 w-6 h-6"></i> نادي الكلية</h3>
+                    <div class="flex flex-col md:flex-row gap-6">
+                        <div class="flex-1 bg-purple-50 p-6 rounded-xl border border-purple-100">
+                            <h4 class="font-bold text-purple-900 text-lg mb-3">عن النادي</h4>
+                            <p class="text-gray-700 text-sm leading-relaxed mb-3">الكيان الطلابي الذي يهتم بتنمية المهارات اللامنهجية للطلاب والطالبات وإقامة المعارض والفعاليات والمسابقات المتخصصة وصقل المواهب الجامعية</p>
+                        </div>
+                        <div class="flex-1 flex flex-col justify-center items-center bg-gray-50 border border-gray-200 rounded-xl p-6 border-dashed">
+                            <i data-lucide="leaf" class="text-gray-400 w-10 h-10 mb-4"></i>
+                            <p class="text-gray-500 text-center font-medium mb-4">بادر بالانضمام لنادي كليتك لتصنع الفارق</p>
+                            <a href="#" target="_blank" class="bg-purple-600 hover:bg-purple-700 text-white px-6 py-2 rounded-lg text-sm font-medium transition-colors flex items-center gap-2">معلومات النادي <i data-lucide="external-link" class="w-4 h-4"></i></a>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </div>
+
+        <!-- 11. كلية الشريعة والقانون -->
+        <div id="view-college-law" class="view">
+            <div class="max-w-5xl mx-auto px-4 py-8">
+                <button onclick="navigateTo('academic')" class="flex items-center gap-2 text-gray-500 hover:text-indigo-600 transition-colors mb-6 font-medium bg-white px-4 py-2 rounded-lg border border-gray-200 shadow-sm w-fit"><i data-lucide="chevron-right" class="w-5 h-5"></i> العودة للكليات</button>
+                <div class="bg-indigo-900 text-white rounded-3xl p-8 mb-8 shadow-lg"><h2 class="text-3xl font-bold mb-2">كلية الشريعة والقانون</h2></div>
+                
+                <section class="bg-white rounded-2xl p-6 shadow-sm border border-gray-100 mb-8">
+                    <h3 class="text-2xl font-bold text-indigo-900 mb-6 flex items-center gap-2 border-b pb-4"><i data-lucide="book-open" class="text-indigo-600 w-6 h-6"></i> مصادر المعرفة في الكلية</h3>
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                        <div class="bg-blue-50 p-5 rounded-xl border border-blue-100">
+                            <h4 class="font-bold text-blue-900 text-lg mb-2">المكتبة العامة في الكلية</h4>
+                            <p class="text-gray-700 text-sm mb-4 leading-relaxed">مساحة هادئة توفر المصادر والكتب المطبوعة المتخصصة التي تدعم مناهج طلاب وطالبات الكلية</p>
+                            <div class="flex flex-col gap-2 text-sm text-gray-700 font-medium">
+                                <span class="flex items-center gap-2"><i data-lucide="clock" class="w-4 h-4 text-blue-600"></i> أوقات العمل: 8:00 صباحاً - 2:00 مساءً</span>
+                                <span class="flex items-center gap-2"><i data-lucide="map-pin" class="w-4 h-4 text-blue-600"></i> الموقع: داخل مقر الكلية</span>
+                            </div>
+                        </div>
+                        <div class="bg-indigo-50 p-5 rounded-xl border border-indigo-100 flex flex-col justify-between">
+                            <div>
+                                <h4 class="font-bold text-indigo-900 text-lg mb-2">المكتبة السعودية الرقمية (SDL)</h4>
+                                <p class="text-gray-700 text-sm mb-4 leading-relaxed">بوابتك لأكبر تجمع إلكتروني للمراجع والكتب والمقالات العلمية المحكمة على مستوى الشرق الأوسط</p>
+                            </div>
+                            <a href="https://www.jazanu.edu.sa/ar/administration/departments/managing-knowledge-resources/sdl-0" target="_blank" class="bg-indigo-600 hover:bg-indigo-700 text-white px-4 py-2 rounded-lg text-sm font-medium flex items-center justify-center gap-2 w-fit transition-colors">الدخول للمكتبة الرقمية <i data-lucide="external-link" class="w-4 h-4"></i></a>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="bg-white rounded-2xl p-6 shadow-sm border border-gray-100 mb-8">
+                    <h3 class="text-2xl font-bold text-indigo-900 mb-6 flex items-center gap-2 border-b pb-4"><i data-lucide="briefcase" class="text-indigo-600 w-6 h-6"></i> التخصصات المتاحة</h3>
+                    <div class="flex flex-wrap gap-3">
+                        <span class="bg-gray-50 text-gray-800 border border-gray-200 px-4 py-2 rounded-full text-sm font-medium hover:bg-indigo-50">تخصص بكالوريوس الشريعة</span>
+                        <span class="bg-gray-50 text-gray-800 border border-gray-200 px-4 py-2 rounded-full text-sm font-medium hover:bg-indigo-50">تخصص ماجستير الفقه وأصوله</span>
+                        <span class="bg-gray-50 text-gray-800 border border-gray-200 px-4 py-2 rounded-full text-sm font-medium hover:bg-indigo-50">تخصص البكالوريوس في القانون</span>
+                        <span class="bg-gray-50 text-gray-800 border border-gray-200 px-4 py-2 rounded-full text-sm font-medium hover:bg-indigo-50">تخصص الدراسات الإسلامية</span>
+                    </div>
+                </section>
+
+                <section class="bg-white rounded-2xl p-6 shadow-sm border border-gray-100 mb-8">
+                    <h3 class="text-2xl font-bold text-indigo-900 mb-6 flex items-center gap-2 border-b pb-4"><i data-lucide="users" class="text-indigo-600 w-6 h-6"></i> المجلس الاستشاري الطلابي</h3>
+                    <div class="bg-gradient-to-l from-blue-50 to-indigo-50 p-6 rounded-xl border border-blue-100 flex flex-col md:flex-row gap-6 items-center">
+                        <div class="w-20 h-20 bg-white rounded-full flex items-center justify-center shadow-sm shrink-0"><i data-lucide="users" class="text-blue-600 w-8 h-8"></i></div>
+                        <div class="w-full">
+                            <h4 class="font-bold text-gray-900 text-lg mb-2">عن المجلس</h4>
+                            <p class="text-gray-700 text-sm mb-4 leading-relaxed">هو حلقة الوصل بين الطلاب وعمادة الكلية يهدف لإيصال صوت الطلاب ومقترحاتهم ومناقشة التحديات للمساهمة في تطوير البيئة الأكاديمية والخدمات المقدمة</p>
+                            <div class="flex flex-wrap gap-3 text-sm mt-2">
+                                <span class="flex items-center gap-1 text-gray-700 bg-white px-3 py-2 rounded-lg border shadow-sm"><i data-lucide="map-pin" class="w-4 h-4 text-indigo-500"></i> الدور الأرضي بجانب مكتب شؤون الطلاب في البهو الرئيسي</span>
+                                <span class="flex items-center gap-1 text-gray-700 bg-white px-3 py-2 rounded-lg border shadow-sm"><i data-lucide="phone" class="w-4 h-4 text-indigo-500"></i> رقم التواصل: (يضاف لاحقاً)</span>
+                                <span class="flex items-center gap-1 text-gray-700 bg-white px-3 py-2 rounded-lg border shadow-sm"><i data-lucide="mail" class="w-4 h-4 text-indigo-500"></i> advisory@jazanu.edu.sa</span>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="bg-white rounded-2xl p-6 shadow-sm border border-gray-100 mb-8">
+                    <h3 class="text-2xl font-bold text-indigo-900 mb-6 flex items-center gap-2 border-b pb-4"><i data-lucide="heart-pulse" class="text-indigo-600 w-6 h-6"></i> نادي الكلية</h3>
+                    <div class="flex flex-col md:flex-row gap-6">
+                        <div class="flex-1 bg-purple-50 p-6 rounded-xl border border-purple-100">
+                            <h4 class="font-bold text-purple-900 text-lg mb-3">عن النادي</h4>
+                            <p class="text-gray-700 text-sm leading-relaxed mb-3">الكيان الطلابي الذي يهتم بتنمية المهارات اللامنهجية للطلاب والطالبات وإقامة المعارض والفعاليات والمسابقات المتخصصة وصقل المواهب الجامعية</p>
+                        </div>
+                        <div class="flex-1 flex flex-col justify-center items-center bg-gray-50 border border-gray-200 rounded-xl p-6 border-dashed">
+                            <i data-lucide="leaf" class="text-gray-400 w-10 h-10 mb-4"></i>
+                            <p class="text-gray-500 text-center font-medium mb-4">بادر بالانضمام لنادي كليتك لتصنع الفارق</p>
+                            <a href="#" target="_blank" class="bg-purple-600 hover:bg-purple-700 text-white px-6 py-2 rounded-lg text-sm font-medium transition-colors flex items-center gap-2">معلومات النادي <i data-lucide="external-link" class="w-4 h-4"></i></a>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </div>
+
+        <!-- 12. كلية الفنون والعلوم الإنسانية -->
+        <div id="view-college-arts" class="view">
+            <div class="max-w-5xl mx-auto px-4 py-8">
+                <button onclick="navigateTo('academic')" class="flex items-center gap-2 text-gray-500 hover:text-indigo-600 transition-colors mb-6 font-medium bg-white px-4 py-2 rounded-lg border border-gray-200 shadow-sm w-fit"><i data-lucide="chevron-right" class="w-5 h-5"></i> العودة للكليات</button>
+                <div class="bg-indigo-900 text-white rounded-3xl p-8 mb-8 shadow-lg"><h2 class="text-3xl font-bold mb-2">كلية الفنون والعلوم الإنسانية</h2></div>
+                
+                <section class="bg-white rounded-2xl p-6 shadow-sm border border-gray-100 mb-8">
+                    <h3 class="text-2xl font-bold text-indigo-900 mb-6 flex items-center gap-2 border-b pb-4"><i data-lucide="book-open" class="text-indigo-600 w-6 h-6"></i> مصادر المعرفة في الكلية</h3>
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                        <div class="bg-blue-50 p-5 rounded-xl border border-blue-100">
+                            <h4 class="font-bold text-blue-900 text-lg mb-2">المكتبة العامة في الكلية</h4>
+                            <p class="text-gray-700 text-sm mb-4 leading-relaxed">مساحة هادئة توفر المصادر والكتب المطبوعة المتخصصة التي تدعم مناهج طلاب وطالبات الكلية</p>
+                            <div class="flex flex-col gap-2 text-sm text-gray-700 font-medium">
+                                <span class="flex items-center gap-2"><i data-lucide="clock" class="w-4 h-4 text-blue-600"></i> أوقات العمل: 8:00 صباحاً - 2:00 مساءً</span>
+                                <span class="flex items-center gap-2"><i data-lucide="map-pin" class="w-4 h-4 text-blue-600"></i> الموقع: داخل مقر الكلية</span>
+                            </div>
+                        </div>
+                        <div class="bg-indigo-50 p-5 rounded-xl border border-indigo-100 flex flex-col justify-between">
+                            <div>
+                                <h4 class="font-bold text-indigo-900 text-lg mb-2">المكتبة السعودية الرقمية (SDL)</h4>
+                                <p class="text-gray-700 text-sm mb-4 leading-relaxed">بوابتك لأكبر تجمع إلكتروني للمراجع والكتب والمقالات العلمية المحكمة على مستوى الشرق الأوسط</p>
+                            </div>
+                            <a href="https://www.jazanu.edu.sa/ar/administration/departments/managing-knowledge-resources/sdl-0" target="_blank" class="bg-indigo-600 hover:bg-indigo-700 text-white px-4 py-2 rounded-lg text-sm font-medium flex items-center justify-center gap-2 w-fit transition-colors">الدخول للمكتبة الرقمية <i data-lucide="external-link" class="w-4 h-4"></i></a>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="bg-white rounded-2xl p-6 shadow-sm border border-gray-100 mb-8">
+                    <h3 class="text-2xl font-bold text-indigo-900 mb-6 flex items-center gap-2 border-b pb-4"><i data-lucide="briefcase" class="text-indigo-600 w-6 h-6"></i> التخصصات المتاحة</h3>
+                    <div class="flex flex-wrap gap-3">
+                        <span class="bg-gray-50 text-gray-800 border border-gray-200 px-4 py-2 rounded-full text-sm font-medium hover:bg-indigo-50">تخصص بكالوريوس اللغة العربية</span>
+                        <span class="bg-gray-50 text-gray-800 border border-gray-200 px-4 py-2 rounded-full text-sm font-medium hover:bg-indigo-50">تخصص البكالوريوس في اللغة الإنجليزية</span>
+                        <span class="bg-gray-50 text-gray-800 border border-gray-200 px-4 py-2 rounded-full text-sm font-medium hover:bg-indigo-50">تخصص الصحافة والنشر الإلكتروني</span>
+                        <span class="bg-gray-50 text-gray-800 border border-gray-200 px-4 py-2 rounded-full text-sm font-medium hover:bg-indigo-50">تخصص الآثار</span>
+                        <span class="bg-gray-50 text-gray-800 border border-gray-200 px-4 py-2 rounded-full text-sm font-medium hover:bg-indigo-50">تخصص التصميم الداخلي</span>
+                        <span class="bg-gray-50 text-gray-800 border border-gray-200 px-4 py-2 rounded-full text-sm font-medium hover:bg-indigo-50">تخصص بكالوريوس علوم الرياضة</span>
+                    </div>
+                </section>
+
+                <section class="bg-white rounded-2xl p-6 shadow-sm border border-gray-100 mb-8">
+                    <h3 class="text-2xl font-bold text-indigo-900 mb-6 flex items-center gap-2 border-b pb-4"><i data-lucide="users" class="text-indigo-600 w-6 h-6"></i> المجلس الاستشاري الطلابي</h3>
+                    <div class="bg-gradient-to-l from-blue-50 to-indigo-50 p-6 rounded-xl border border-blue-100 flex flex-col md:flex-row gap-6 items-center">
+                        <div class="w-20 h-20 bg-white rounded-full flex items-center justify-center shadow-sm shrink-0"><i data-lucide="users" class="text-blue-600 w-8 h-8"></i></div>
+                        <div class="w-full">
+                            <h4 class="font-bold text-gray-900 text-lg mb-2">عن المجلس</h4>
+                            <p class="text-gray-700 text-sm mb-4 leading-relaxed">هو حلقة الوصل بين الطلاب وعمادة الكلية يهدف لإيصال صوت الطلاب ومقترحاتهم ومناقشة التحديات للمساهمة في تطوير البيئة الأكاديمية والخدمات المقدمة</p>
+                            <div class="flex flex-wrap gap-3 text-sm mt-2">
+                                <span class="flex items-center gap-1 text-gray-700 bg-white px-3 py-2 rounded-lg border shadow-sm"><i data-lucide="map-pin" class="w-4 h-4 text-indigo-500"></i> الدور الأرضي بجانب مكتب شؤون الطلاب في البهو الرئيسي</span>
+                                <span class="flex items-center gap-1 text-gray-700 bg-white px-3 py-2 rounded-lg border shadow-sm"><i data-lucide="phone" class="w-4 h-4 text-indigo-500"></i> رقم التواصل: (يضاف لاحقاً)</span>
+                                <span class="flex items-center gap-1 text-gray-700 bg-white px-3 py-2 rounded-lg border shadow-sm"><i data-lucide="mail" class="w-4 h-4 text-indigo-500"></i> advisory@jazanu.edu.sa</span>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="bg-white rounded-2xl p-6 shadow-sm border border-gray-100 mb-8">
+                    <h3 class="text-2xl font-bold text-indigo-900 mb-6 flex items-center gap-2 border-b pb-4"><i data-lucide="heart-pulse" class="text-indigo-600 w-6 h-6"></i> نادي الكلية</h3>
+                    <div class="flex flex-col md:flex-row gap-6">
+                        <div class="flex-1 bg-purple-50 p-6 rounded-xl border border-purple-100">
+                            <h4 class="font-bold text-purple-900 text-lg mb-3">عن النادي</h4>
+                            <p class="text-gray-700 text-sm leading-relaxed mb-3">الكيان الطلابي الذي يهتم بتنمية المهارات اللامنهجية للطلاب والطالبات وإقامة المعارض والفعاليات والمسابقات المتخصصة وصقل المواهب الجامعية</p>
+                        </div>
+                        <div class="flex-1 flex flex-col justify-center items-center bg-gray-50 border border-gray-200 rounded-xl p-6 border-dashed">
+                            <i data-lucide="leaf" class="text-gray-400 w-10 h-10 mb-4"></i>
+                            <p class="text-gray-500 text-center font-medium mb-4">بادر بالانضمام لنادي كليتك لتصنع الفارق</p>
+                            <a href="#" target="_blank" class="bg-purple-600 hover:bg-purple-700 text-white px-6 py-2 rounded-lg text-sm font-medium transition-colors flex items-center gap-2">معلومات النادي <i data-lucide="external-link" class="w-4 h-4"></i></a>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </div>
+
+        <!-- 13. كلية الطب -->
+        <div id="view-college-medicine" class="view">
+            <div class="max-w-5xl mx-auto px-4 py-8">
+                <button onclick="navigateTo('academic')" class="flex items-center gap-2 text-gray-500 hover:text-indigo-600 transition-colors mb-6 font-medium bg-white px-4 py-2 rounded-lg border border-gray-200 shadow-sm w-fit"><i data-lucide="chevron-right" class="w-5 h-5"></i> العودة للكليات</button>
+                <div class="bg-indigo-900 text-white rounded-3xl p-8 mb-8 shadow-lg"><h2 class="text-3xl font-bold mb-2">كلية الطب</h2></div>
+                
+                <section class="bg-white rounded-2xl p-6 shadow-sm border border-gray-100 mb-8">
+                    <h3 class="text-2xl font-bold text-indigo-900 mb-6 flex items-center gap-2 border-b pb-4"><i data-lucide="book-open" class="text-indigo-600 w-6 h-6"></i> مصادر المعرفة في الكلية</h3>
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                        <div class="bg-blue-50 p-5 rounded-xl border border-blue-100">
+                            <h4 class="font-bold text-blue-900 text-lg mb-2">المكتبة العامة في الكلية</h4>
+                            <p class="text-gray-700 text-sm mb-4 leading-relaxed">مساحة هادئة توفر المصادر والكتب المطبوعة المتخصصة التي تدعم مناهج طلاب وطالبات الكلية</p>
+                            <div class="flex flex-col gap-2 text-sm text-gray-700 font-medium">
+                                <span class="flex items-center gap-2"><i data-lucide="clock" class="w-4 h-4 text-blue-600"></i> أوقات العمل: 8:00 صباحاً - 2:00 مساءً</span>
+                                <span class="flex items-center gap-2"><i data-lucide="map-pin" class="w-4 h-4 text-blue-600"></i> الموقع: داخل مقر الكلية</span>
+                            </div>
+                        </div>
+                        <div class="bg-indigo-50 p-5 rounded-xl border border-indigo-100 flex flex-col justify-between">
+                            <div>
+                                <h4 class="font-bold text-indigo-900 text-lg mb-2">المكتبة السعودية الرقمية (SDL)</h4>
+                                <p class="text-gray-700 text-sm mb-4 leading-relaxed">بوابتك لأكبر تجمع إلكتروني للمراجع والكتب والمقالات العلمية المحكمة على مستوى الشرق الأوسط</p>
+                            </div>
+                            <a href="https://www.jazanu.edu.sa/ar/administration/departments/managing-knowledge-resources/sdl-0" target="_blank" class="bg-indigo-600 hover:bg-indigo-700 text-white px-4 py-2 rounded-lg text-sm font-medium flex items-center justify-center gap-2 w-fit transition-colors">الدخول للمكتبة الرقمية <i data-lucide="external-link" class="w-4 h-4"></i></a>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="bg-white rounded-2xl p-6 shadow-sm border border-gray-100 mb-8">
+                    <h3 class="text-2xl font-bold text-indigo-900 mb-6 flex items-center gap-2 border-b pb-4"><i data-lucide="briefcase" class="text-indigo-600 w-6 h-6"></i> التخصصات المتاحة</h3>
+                    <div class="flex flex-wrap gap-3">
+                        <span class="bg-gray-50 text-gray-800 border border-gray-200 px-4 py-2 rounded-full text-sm font-medium hover:bg-indigo-50">تخصص طب الأسرة والمجتمع</span>
+                        <span class="bg-gray-50 text-gray-800 border border-gray-200 px-4 py-2 rounded-full text-sm font-medium hover:bg-indigo-50">تخصص الامراض الباطنية</span>
+                        <span class="bg-gray-50 text-gray-800 border border-gray-200 px-4 py-2 rounded-full text-sm font-medium hover:bg-indigo-50">تخصص طب الأطفال</span>
+                        <span class="bg-gray-50 text-gray-800 border border-gray-200 px-4 py-2 rounded-full text-sm font-medium hover:bg-indigo-50">تخصص الجراحة</span>
+                    </div>
+                </section>
+
+                <section class="bg-white rounded-2xl p-6 shadow-sm border border-gray-100 mb-8">
+                    <h3 class="text-2xl font-bold text-indigo-900 mb-6 flex items-center gap-2 border-b pb-4"><i data-lucide="users" class="text-indigo-600 w-6 h-6"></i> المجلس الاستشاري الطلابي</h3>
+                    <div class="bg-gradient-to-l from-blue-50 to-indigo-50 p-6 rounded-xl border border-blue-100 flex flex-col md:flex-row gap-6 items-center">
+                        <div class="w-20 h-20 bg-white rounded-full flex items-center justify-center shadow-sm shrink-0"><i data-lucide="users" class="text-blue-600 w-8 h-8"></i></div>
+                        <div class="w-full">
+                            <h4 class="font-bold text-gray-900 text-lg mb-2">عن المجلس</h4>
+                            <p class="text-gray-700 text-sm mb-4 leading-relaxed">هو حلقة الوصل بين الطلاب وعمادة الكلية يهدف لإيصال صوت الطلاب ومقترحاتهم ومناقشة التحديات للمساهمة في تطوير البيئة الأكاديمية والخدمات المقدمة</p>
+                            <div class="flex flex-wrap gap-3 text-sm mt-2">
+                                <span class="flex items-center gap-1 text-gray-700 bg-white px-3 py-2 rounded-lg border shadow-sm"><i data-lucide="map-pin" class="w-4 h-4 text-indigo-500"></i> الدور الأرضي بجانب مكتب شؤون الطلاب في البهو الرئيسي</span>
+                                <span class="flex items-center gap-1 text-gray-700 bg-white px-3 py-2 rounded-lg border shadow-sm"><i data-lucide="phone" class="w-4 h-4 text-indigo-500"></i> رقم التواصل: (يضاف لاحقاً)</span>
+                                <span class="flex items-center gap-1 text-gray-700 bg-white px-3 py-2 rounded-lg border shadow-sm"><i data-lucide="mail" class="w-4 h-4 text-indigo-500"></i> advisory@jazanu.edu.sa</span>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="bg-white rounded-2xl p-6 shadow-sm border border-gray-100 mb-8">
+                    <h3 class="text-2xl font-bold text-indigo-900 mb-6 flex items-center gap-2 border-b pb-4"><i data-lucide="heart-pulse" class="text-indigo-600 w-6 h-6"></i> نادي الكلية</h3>
+                    <div class="flex flex-col md:flex-row gap-6">
+                        <div class="flex-1 bg-purple-50 p-6 rounded-xl border border-purple-100">
+                            <h4 class="font-bold text-purple-900 text-lg mb-3">عن النادي</h4>
+                            <p class="text-gray-700 text-sm leading-relaxed mb-3">الكيان الطلابي الذي يهتم بتنمية المهارات اللامنهجية للطلاب والطالبات وإقامة المعارض والفعاليات والمسابقات المتخصصة وصقل المواهب الجامعية</p>
+                        </div>
+                        <div class="flex-1 flex flex-col justify-center items-center bg-gray-50 border border-gray-200 rounded-xl p-6 border-dashed">
+                            <i data-lucide="leaf" class="text-gray-400 w-10 h-10 mb-4"></i>
+                            <p class="text-gray-500 text-center font-medium mb-4">بادر بالانضمام لنادي كليتك لتصنع الفارق</p>
+                            <a href="#" target="_blank" class="bg-purple-600 hover:bg-purple-700 text-white px-6 py-2 rounded-lg text-sm font-medium transition-colors flex items-center gap-2">معلومات النادي <i data-lucide="external-link" class="w-4 h-4"></i></a>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </div>
+
+        <!-- 14. كلية الهندسة وعلوم الحاسب -->
+        <div id="view-college-engineering" class="view">
+            <div class="max-w-5xl mx-auto px-4 py-8">
+                <button onclick="navigateTo('academic')" class="flex items-center gap-2 text-gray-500 hover:text-indigo-600 transition-colors mb-6 font-medium bg-white px-4 py-2 rounded-lg border border-gray-200 shadow-sm w-fit"><i data-lucide="chevron-right" class="w-5 h-5"></i> العودة للكليات</button>
+                <div class="bg-indigo-900 text-white rounded-3xl p-8 mb-8 shadow-lg"><h2 class="text-3xl font-bold mb-2">كلية الهندسة وعلوم الحاسب</h2></div>
+                
+                <section class="bg-white rounded-2xl p-6 shadow-sm border border-gray-100 mb-8">
+                    <h3 class="text-2xl font-bold text-indigo-900 mb-6 flex items-center gap-2 border-b pb-4"><i data-lucide="book-open" class="text-indigo-600 w-6 h-6"></i> مصادر المعرفة في الكلية</h3>
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                        <div class="bg-blue-50 p-5 rounded-xl border border-blue-100">
+                            <h4 class="font-bold text-blue-900 text-lg mb-2">المكتبة العامة في الكلية</h4>
+                            <p class="text-gray-700 text-sm mb-4 leading-relaxed">مساحة هادئة توفر المصادر والكتب المطبوعة المتخصصة التي تدعم مناهج طلاب وطالبات الكلية</p>
+                            <div class="flex flex-col gap-2 text-sm text-gray-700 font-medium">
+                                <span class="flex items-center gap-2"><i data-lucide="clock" class="w-4 h-4 text-blue-600"></i> أوقات العمل: 8:00 صباحاً - 2:00 مساءً</span>
+                                <span class="flex items-center gap-2"><i data-lucide="map-pin" class="w-4 h-4 text-blue-600"></i> الموقع: داخل مقر الكلية</span>
+                            </div>
+                        </div>
+                        <div class="bg-indigo-50 p-5 rounded-xl border border-indigo-100 flex flex-col justify-between">
+                            <div>
+                                <h4 class="font-bold text-indigo-900 text-lg mb-2">المكتبة السعودية الرقمية (SDL)</h4>
+                                <p class="text-gray-700 text-sm mb-4 leading-relaxed">بوابتك لأكبر تجمع إلكتروني للمراجع والكتب والمقالات العلمية المحكمة على مستوى الشرق الأوسط</p>
+                            </div>
+                            <a href="https://www.jazanu.edu.sa/ar/administration/departments/managing-knowledge-resources/sdl-0" target="_blank" class="bg-indigo-600 hover:bg-indigo-700 text-white px-4 py-2 rounded-lg text-sm font-medium flex items-center justify-center gap-2 w-fit transition-colors">الدخول للمكتبة الرقمية <i data-lucide="external-link" class="w-4 h-4"></i></a>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="bg-white rounded-2xl p-6 shadow-sm border border-gray-100 mb-8">
+                    <h3 class="text-2xl font-bold text-indigo-900 mb-6 flex items-center gap-2 border-b pb-4"><i data-lucide="briefcase" class="text-indigo-600 w-6 h-6"></i> التخصصات المتاحة</h3>
+                    <div class="flex flex-wrap gap-3">
+                        <span class="bg-gray-50 text-gray-800 border border-gray-200 px-4 py-2 rounded-full text-sm font-medium hover:bg-indigo-50">تخصص بكالوريوس العلوم في الهندسة المدنية</span>
+                        <span class="bg-gray-50 text-gray-800 border border-gray-200 px-4 py-2 rounded-full text-sm font-medium hover:bg-indigo-50">تخصص بكالوريوس العلوم في الهندسة المعمارية</span>
+                        <span class="bg-gray-50 text-gray-800 border border-gray-200 px-4 py-2 rounded-full text-sm font-medium hover:bg-indigo-50">تخصص الهندسة الصناعية</span>
+                        <span class="bg-gray-50 text-gray-800 border border-gray-200 px-4 py-2 rounded-full text-sm font-medium hover:bg-indigo-50">تخصص الهندسة الكيميائية</span>
+                        <span class="bg-gray-50 text-gray-800 border border-gray-200 px-4 py-2 rounded-full text-sm font-medium hover:bg-indigo-50">تخصص بكالوريوس الهندسة الميكانيكية</span>
+                        <span class="bg-gray-50 text-gray-800 border border-gray-200 px-4 py-2 rounded-full text-sm font-medium hover:bg-indigo-50">تخصص بكالوريوس علوم الحاسب</span>
+                        <span class="bg-gray-50 text-gray-800 border border-gray-200 px-4 py-2 rounded-full text-sm font-medium hover:bg-indigo-50">تخصص بكالوريوس تقنية المعلومات</span>
+                        <span class="bg-gray-50 text-gray-800 border border-gray-200 px-4 py-2 rounded-full text-sm font-medium hover:bg-indigo-50">تخصص بكالوريوس العلوم في الهندسة الكهربائية</span>
+                        <span class="bg-gray-50 text-gray-800 border border-gray-200 px-4 py-2 rounded-full text-sm font-medium hover:bg-indigo-50">تخصص بكالوريوس هندسة الحاسب والشبكات</span>
+                    </div>
+                </section>
+                
+                <section class="bg-white rounded-2xl p-6 shadow-sm border border-gray-100 mb-8">
+                    <h3 class="text-2xl font-bold text-indigo-900 mb-6 flex items-center gap-2 border-b pb-4"><i data-lucide="activity" class="text-indigo-600 w-6 h-6"></i> التسلسل الإداري لحل المشكلات</h3>
+                    <div class="space-y-4 relative before:absolute before:inset-0 before:mr-5 md:before:mx-auto md:before:translate-x-0 before:h-full before:w-0.5 before:bg-gradient-to-b before:from-transparent before:via-indigo-200 before:to-transparent">
+                        <div class="relative flex items-center justify-between md:justify-normal md:even:flex-row-reverse group">
+                            <div class="flex items-center justify-center w-10 h-10 rounded-full border-4 border-white bg-indigo-100 text-indigo-600 shadow shrink-0 md:order-1 md:group-odd:translate-x-1/2 md:group-even:-translate-x-1/2 font-bold z-10">1</div>
+                            <div class="w-[calc(100%-4rem)] md:w-[calc(50%-2.5rem)] bg-gray-50 p-4 rounded-xl border border-gray-100 shadow-sm">
+                                <h4 class="font-bold text-gray-900 mb-1">المرشد الأكاديمي</h4>
+                                <p class="text-sm text-gray-500 mb-4">خطوتك الأولى للتوجيه والمساعدة</p>
+                                <button onclick="navigateTo('advisor-guide')" class="bg-indigo-100 hover:bg-indigo-200 text-indigo-700 px-4 py-2 rounded-lg text-sm font-bold transition-colors flex items-center gap-2 w-fit">
+                                    دليل الوصول للمرشد الأكاديمي <i data-lucide="arrow-left" class="w-4 h-4"></i>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="relative flex items-center justify-between md:justify-normal md:even:flex-row-reverse group">
+                            <div class="flex items-center justify-center w-10 h-10 rounded-full border-4 border-white bg-indigo-100 text-indigo-600 shadow shrink-0 md:order-1 md:group-odd:translate-x-1/2 md:group-even:-translate-x-1/2 font-bold z-10">2</div>
+                            <div class="w-[calc(100%-4rem)] md:w-[calc(50%-2.5rem)] bg-gray-50 p-4 rounded-xl border border-gray-100 shadow-sm">
+                                <h4 class="font-bold text-gray-900 mb-1">وكيل شؤون الطلاب في القسم</h4>
+                                <p class="text-sm text-gray-500 mb-4">متابعة شؤون الطلاب داخل القسم</p>
+                                <button onclick="navigateTo('vicedean-guide')" class="bg-indigo-100 hover:bg-indigo-200 text-indigo-700 px-4 py-2 rounded-lg text-sm font-bold transition-colors flex items-center gap-2 w-fit">
+                                    دليل الوصول لوكيل شؤون الطلاب <i data-lucide="arrow-left" class="w-4 h-4"></i>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="relative flex items-center justify-between md:justify-normal md:even:flex-row-reverse group">
+                            <div class="flex items-center justify-center w-10 h-10 rounded-full border-4 border-white bg-indigo-100 text-indigo-600 shadow shrink-0 md:order-1 md:group-odd:translate-x-1/2 md:group-even:-translate-x-1/2 font-bold z-10">3</div>
+                            <div class="w-[calc(100%-4rem)] md:w-[calc(50%-2.5rem)] bg-gray-50 p-4 rounded-xl border border-gray-100 shadow-sm">
+                                <h4 class="font-bold text-gray-900 mb-1">رئيس القسم</h4>
+                                <p class="text-sm text-gray-500 mb-4">المرجع الأكاديمي والإداري للقسم</p>
+                                <button onclick="navigateTo('depthead-guide')" class="bg-indigo-100 hover:bg-indigo-200 text-indigo-700 px-4 py-2 rounded-lg text-sm font-bold transition-colors flex items-center gap-2 w-fit">
+                                    دليل الوصول لرئيس القسم <i data-lucide="arrow-left" class="w-4 h-4"></i>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="relative flex items-center justify-between md:justify-normal md:even:flex-row-reverse group">
+                            <div class="flex items-center justify-center w-10 h-10 rounded-full border-4 border-white bg-indigo-100 text-indigo-600 shadow shrink-0 md:order-1 md:group-odd:translate-x-1/2 md:group-even:-translate-x-1/2 font-bold z-10">4</div>
+                            <div class="w-[calc(100%-4rem)] md:w-[calc(50%-2.5rem)] bg-gray-50 p-4 rounded-xl border border-gray-100 shadow-sm">
+                                <h4 class="font-bold text-gray-900 mb-1">وكيل الكلية للشؤون الأكاديمية</h4>
+                                <p class="text-sm text-gray-500 mb-4">الإشراف على العمليات الأكاديمية</p>
+                                <button onclick="navigateTo('vicedeanacad-guide')" class="bg-indigo-100 hover:bg-indigo-200 text-indigo-700 px-4 py-2 rounded-lg text-sm font-bold transition-colors flex items-center gap-2 w-fit">
+                                    دليل الوصول لوكيل الكلية <i data-lucide="arrow-left" class="w-4 h-4"></i>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="relative flex items-center justify-between md:justify-normal md:even:flex-row-reverse group">
+                            <div class="flex items-center justify-center w-10 h-10 rounded-full border-4 border-white bg-indigo-100 text-indigo-600 shadow shrink-0 md:order-1 md:group-odd:translate-x-1/2 md:group-even:-translate-x-1/2 font-bold z-10">5</div>
+                            <div class="w-[calc(100%-4rem)] md:w-[calc(50%-2.5rem)] bg-gray-50 p-4 rounded-xl border border-gray-100 shadow-sm">
+                                <h4 class="font-bold text-gray-900 mb-1">عميد الكلية</h4>
+                                <p class="text-sm text-gray-500 mb-4">المرجع الأعلى في الكلية</p>
+                                <button onclick="navigateTo('dean-guide')" class="bg-indigo-100 hover:bg-indigo-200 text-indigo-700 px-4 py-2 rounded-lg text-sm font-bold transition-colors flex items-center gap-2 w-fit">
+                                    دليل الوصول لعميد الكلية <i data-lucide="arrow-left" class="w-4 h-4"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="bg-white rounded-2xl p-6 shadow-sm border border-gray-100 mb-8">
+                    <h3 class="text-2xl font-bold text-indigo-900 mb-6 flex items-center gap-2 border-b pb-4"><i data-lucide="users" class="text-indigo-600 w-6 h-6"></i> المجلس الاستشاري الطلابي</h3>
+                    <div class="bg-gradient-to-l from-blue-50 to-indigo-50 p-6 rounded-xl border border-blue-100 flex flex-col md:flex-row gap-6 items-center">
+                        <div class="w-20 h-20 bg-white rounded-full flex items-center justify-center shadow-sm shrink-0"><i data-lucide="users" class="text-blue-600 w-8 h-8"></i></div>
+                        <div class="w-full">
+                            <h4 class="font-bold text-gray-900 text-lg mb-2">عن المجلس</h4>
+                            <p class="text-gray-700 text-sm mb-4 leading-relaxed">هو حلقة الوصل بين الطلاب وعمادة الكلية يهدف لإيصال صوت الطلاب ومقترحاتهم ومناقشة التحديات للمساهمة في تطوير البيئة الأكاديمية والخدمات المقدمة</p>
+                            <div class="flex flex-wrap gap-3 text-sm mt-2">
+                                <span class="flex items-center gap-1 text-gray-700 bg-white px-3 py-2 rounded-lg border shadow-sm"><i data-lucide="map-pin" class="w-4 h-4 text-indigo-500"></i> الدور الأرضي بجانب مكتب شؤون الطلاب في البهو الرئيسي</span>
+                                <span class="flex items-center gap-1 text-gray-700 bg-white px-3 py-2 rounded-lg border shadow-sm"><i data-lucide="phone" class="w-4 h-4 text-indigo-500"></i> رقم التواصل: (يضاف لاحقاً)</span>
+                                <span class="flex items-center gap-1 text-gray-700 bg-white px-3 py-2 rounded-lg border shadow-sm"><i data-lucide="mail" class="w-4 h-4 text-indigo-500"></i> advisory@jazanu.edu.sa</span>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="bg-white rounded-2xl p-6 shadow-sm border border-gray-100 mb-8">
+                    <h3 class="text-2xl font-bold text-indigo-900 mb-6 flex items-center gap-2 border-b pb-4"><i data-lucide="heart-pulse" class="text-indigo-600 w-6 h-6"></i> نادي الكلية</h3>
+                    <div class="flex flex-col md:flex-row gap-6">
+                        <div class="flex-1 bg-purple-50 p-6 rounded-xl border border-purple-100">
+                            <h4 class="font-bold text-purple-900 text-lg mb-3">عن النادي</h4>
+                            <p class="text-gray-700 text-sm leading-relaxed mb-3">الكيان الطلابي الذي يهتم بتنمية المهارات اللامنهجية للطلاب والطالبات وإقامة المعارض والفعاليات والمسابقات المتخصصة وصقل المواهب الجامعية</p>
+                        </div>
+                        <div class="flex-1 flex flex-col justify-center items-center bg-gray-50 border border-gray-200 rounded-xl p-6 border-dashed">
+                            <i data-lucide="leaf" class="text-gray-400 w-10 h-10 mb-4"></i>
+                            <p class="text-gray-500 text-center font-medium mb-4">بادر بالانضمام لنادي كليتك لتصنع الفارق</p>
+                            <a href="#" target="_blank" class="bg-purple-600 hover:bg-purple-700 text-white px-6 py-2 rounded-lg text-sm font-medium transition-colors flex items-center gap-2">معلومات النادي <i data-lucide="external-link" class="w-4 h-4"></i></a>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </div>
+        <!-- ========================================================================= -->
+
+        <!-- View: Advisor Guide -->
+        <div id="view-advisor-guide" class="view">
+            <div class="max-w-4xl mx-auto px-4 py-8">
+                <button onclick="navigateTo('college-engineering')" class="flex items-center gap-2 text-gray-500 hover:text-indigo-600 transition-colors mb-6 font-medium bg-white px-4 py-2 rounded-lg border border-gray-200 shadow-sm w-fit">
+                    <i data-lucide="chevron-right" class="w-5 h-5"></i> العودة لكلية الهندسة وعلوم الحاسب
+                </button>
+                
+                <h2 class="text-3xl font-bold text-indigo-900 mb-8 flex items-center gap-3">
+                    <i data-lucide="info" class="text-indigo-600 w-8 h-8"></i> دليل الوصول للمرشد الأكاديمي
+                </h2>
+
+                <div class="space-y-12">
+                    <div class="bg-white p-6 rounded-2xl shadow-sm border border-gray-100 text-center">
+                        <h3 class="text-xl font-bold text-gray-800 mb-4">اضغط هنا لتسجيل الدخول للنظام الاكاديمي</h3>
+                        <img src="Asset/guide-step1.png" alt="الخطوة 1" class="mx-auto rounded-xl border border-gray-200 max-h-96 object-contain w-full" onerror="this.outerHTML='<div class=\'bg-gray-50 rounded-xl h-64 flex items-center justify-center border-2 border-dashed border-gray-300\'><span class=\'text-gray-400\'>[ صورة توضيحية رقم 1 ]<br>قم بإضافة الصورة في مسار Asset/guide-step1.png</span></div>'">
+                    </div>
+
+                    <div class="bg-white p-6 rounded-2xl shadow-sm border border-gray-100 text-center">
+                        <h3 class="text-xl font-bold text-gray-800 mb-4">ادخل معلوماتك الرسمية للدخول</h3>
+                        <img src="Asset/guide-step2.png" alt="الخطوة 2" class="mx-auto rounded-xl border border-gray-200 max-h-96 object-contain w-full" onerror="this.outerHTML='<div class=\'bg-gray-50 rounded-xl h-64 flex items-center justify-center border-2 border-dashed border-gray-300\'><span class=\'text-gray-400\'>[ صورة توضيحية رقم 2 ]<br>قم بإضافة الصورة في مسار Asset/guide-step2.png</span></div>'">
+                    </div>
+
+                    <div class="bg-white p-6 rounded-2xl shadow-sm border border-gray-100 text-center">
+                        <h3 class="text-xl font-bold text-gray-800 mb-4">اضغط هنا لتوسعة الخيارات</h3>
+                        <img src="Asset/guide-step3.png" alt="الخطوة 3" class="mx-auto rounded-xl border border-gray-200 max-h-96 object-contain w-full" onerror="this.outerHTML='<div class=\'bg-gray-50 rounded-xl h-64 flex items-center justify-center border-2 border-dashed border-gray-300\'><span class=\'text-gray-400\'>[ صورة توضيحية رقم 3 ]<br>قم بإضافة الصورة في مسار Asset/guide-step3.png</span></div>'">
+                    </div>
+
+                    <div class="bg-white p-6 rounded-2xl shadow-sm border border-gray-100 text-center">
+                        <h3 class="text-xl font-bold text-gray-800 mb-4">اضغط هنا للوصول الي صفحة المرشد الاكاديمي</h3>
+                        <img src="Asset/guide-step4.png" alt="الخطوة 4" class="mx-auto rounded-xl border border-gray-200 max-h-96 object-contain w-full" onerror="this.outerHTML='<div class=\'bg-gray-50 rounded-xl h-64 flex items-center justify-center border-2 border-dashed border-gray-300\'><span class=\'text-gray-400\'>[ صورة توضيحية رقم 4 ]<br>قم بإضافة الصورة في مسار Asset/guide-step4.png</span></div>'">
+                    </div>
+
+                    <div class="bg-white p-6 rounded-2xl shadow-sm border border-gray-100 text-center">
+                        <h3 class="text-xl font-bold text-gray-800 mb-4 leading-relaxed">هنا صفحة المرشد الأكاديمي بامكانك رؤية الاجراءات التي قام بها المرشد الاكاديمي <br> وبامكامك طلب التواصل مع المرشد الاكاديمي وبامكانك متابعة الطلبات السابقة</h3>
+                        <img src="Asset/guide-step5.png" alt="الخطوة 5" class="mx-auto rounded-xl border border-gray-200 max-h-96 object-contain w-full" onerror="this.outerHTML='<div class=\'bg-gray-50 rounded-xl h-64 flex items-center justify-center border-2 border-dashed border-gray-300\'><span class=\'text-gray-400\'>[ صورة توضيحية رقم 5 ]<br>قم بإضافة الصورة في مسار Asset/guide-step5.png</span></div>'">
+                    </div>
+
+                    <div class="bg-white p-6 rounded-2xl shadow-sm border border-gray-100 text-center">
+                        <h3 class="text-xl font-bold text-gray-800 mb-4 leading-relaxed">اختار نوع نموذج الطلب واختر القسم الذي تريد التواصل معه في حال كنت تريد التواصل مع المرشد الأكاديمي بامكانك الاختيار خيار المرشد الأكاديمي</h3>
+                        <img src="Asset/guide-step6.png" alt="الخطوة 6" class="mx-auto rounded-xl border border-gray-200 max-h-96 object-contain w-full" onerror="this.outerHTML='<div class=\'bg-gray-50 rounded-xl h-64 flex items-center justify-center border-2 border-dashed border-gray-300\'><span class=\'text-gray-400\'>[ صورة توضيحية رقم 6 ]<br>قم بإضافة الصورة في مسار Asset/guide-step6.png</span></div>'">
+                    </div>
+                </div>
+
+                <div class="mt-12 text-center mb-8">
+                    <a href="https://edugate.jazanu.edu.sa/jazan/ui/home.faces" target="_blank" class="inline-flex items-center gap-2 bg-indigo-600 hover:bg-indigo-700 text-white px-8 py-4 rounded-xl text-lg font-bold transition-all transform hover:-translate-y-1 shadow-lg hover:shadow-xl">
+                        الدخول للنظام الأكاديمي <i data-lucide="external-link" class="w-5 h-5"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <!-- View: Vice Dean Guide -->
+        <div id="view-vicedean-guide" class="view">
+            <div class="max-w-4xl mx-auto px-4 py-8">
+                <button onclick="navigateTo('college-engineering')" class="flex items-center gap-2 text-gray-500 hover:text-indigo-600 transition-colors mb-6 font-medium bg-white px-4 py-2 rounded-lg border border-gray-200 shadow-sm w-fit">
+                    <i data-lucide="chevron-right" class="w-5 h-5"></i> العودة لكلية الهندسة وعلوم الحاسب
+                </button>
+                
+                <h2 class="text-3xl font-bold text-indigo-900 mb-8 flex items-center gap-3">
+                    <i data-lucide="info" class="text-indigo-600 w-8 h-8"></i> دليل الوصول لوكيل شؤون الطلاب في القسم
+                </h2>
+
+                <div class="space-y-12">
+                    <div class="bg-white p-6 rounded-2xl shadow-sm border border-gray-100 text-center">
+                        <h3 class="text-xl font-bold text-gray-800 mb-4">اضغط هنا لتسجيل الدخول للنظام الاكاديمي</h3>
+                        <img src="Asset/vicedean-step1.png" alt="الخطوة 1" class="mx-auto rounded-xl border border-gray-200 max-h-96 object-contain w-full" onerror="this.outerHTML='<div class=\'bg-gray-50 rounded-xl h-64 flex items-center justify-center border-2 border-dashed border-gray-300\'><span class=\'text-gray-400\'>[ صورة توضيحية رقم 1 ]<br>قم بإضافة الصورة في مسار Asset/vicedean-step1.png</span></div>'">
+                    </div>
+
+                    <div class="bg-white p-6 rounded-2xl shadow-sm border border-gray-100 text-center">
+                        <h3 class="text-xl font-bold text-gray-800 mb-4">ادخل معلوماتك الرسمية للدخول</h3>
+                        <img src="Asset/vicedean-step2.png" alt="الخطوة 2" class="mx-auto rounded-xl border border-gray-200 max-h-96 object-contain w-full" onerror="this.outerHTML='<div class=\'bg-gray-50 rounded-xl h-64 flex items-center justify-center border-2 border-dashed border-gray-300\'><span class=\'text-gray-400\'>[ صورة توضيحية رقم 2 ]<br>قم بإضافة الصورة في مسار Asset/vicedean-step2.png</span></div>'">
+                    </div>
+
+                    <div class="bg-white p-6 rounded-2xl shadow-sm border border-gray-100 text-center">
+                        <h3 class="text-xl font-bold text-gray-800 mb-4">اضغط هنا لتوسعة الخيارات</h3>
+                        <img src="Asset/vicedean-step3.png" alt="الخطوة 3" class="mx-auto rounded-xl border border-gray-200 max-h-96 object-contain w-full" onerror="this.outerHTML='<div class=\'bg-gray-50 rounded-xl h-64 flex items-center justify-center border-2 border-dashed border-gray-300\'><span class=\'text-gray-400\'>[ صورة توضيحية رقم 3 ]<br>قم بإضافة الصورة في مسار Asset/vicedean-step3.png</span></div>'">
+                    </div>
+
+                    <div class="bg-white p-6 rounded-2xl shadow-sm border border-gray-100 text-center">
+                        <h3 class="text-xl font-bold text-gray-800 mb-4">اضغط هنا للوصول الي صفحة وكيل شؤون الطلاب في القسم</h3>
+                        <img src="Asset/vicedean-step4.png" alt="الخطوة 4" class="mx-auto rounded-xl border border-gray-200 max-h-96 object-contain w-full" onerror="this.outerHTML='<div class=\'bg-gray-50 rounded-xl h-64 flex items-center justify-center border-2 border-dashed border-gray-300\'><span class=\'text-gray-400\'>[ صورة توضيحية رقم 4 ]<br>قم بإضافة الصورة في مسار Asset/vicedean-step4.png</span></div>'">
+                    </div>
+
+                    <div class="bg-white p-6 rounded-2xl shadow-sm border border-gray-100 text-center">
+                        <h3 class="text-xl font-bold text-gray-800 mb-4 leading-relaxed">هنا صفحة وكيل شؤون الطلاب بامكانك ادخال طلب جديد او متابعة الطلبات والاستفسارات السابقة <br> وبامكانك طلب التواصل معه وبامكانك متابعة الطلبات السابقة</h3>
+                        <img src="Asset/vicedean-step5.png" alt="الخطوة 5" class="mx-auto rounded-xl border border-gray-200 max-h-96 object-contain w-full" onerror="this.outerHTML='<div class=\'bg-gray-50 rounded-xl h-64 flex items-center justify-center border-2 border-dashed border-gray-300\'><span class=\'text-gray-400\'>[ صورة توضيحية رقم 5 ]<br>قم بإضافة الصورة في مسار Asset/vicedean-step5.png</span></div>'">
+                    </div>
+
+                    <div class="bg-white p-6 rounded-2xl shadow-sm border border-gray-100 text-center">
+                        <h3 class="text-xl font-bold text-gray-800 mb-4 leading-relaxed">اختار نوع نموذج الطلب واختر القسم الذي تريد التواصل معه في حال كنت تريد التواصل مع وكيل شؤون الطلاب في القسم بامكانك الاختيار خيار مسجل الكلية</h3>
+                        <img src="Asset/vicedean-step6.png" alt="الخطوة 6" class="mx-auto rounded-xl border border-gray-200 max-h-96 object-contain w-full" onerror="this.outerHTML='<div class=\'bg-gray-50 rounded-xl h-64 flex items-center justify-center border-2 border-dashed border-gray-300\'><span class=\'text-gray-400\'>[ صورة توضيحية رقم 6 ]<br>قم بإضافة الصورة في مسار Asset/vicedean-step6.png</span></div>'">
+                    </div>
+                </div>
+
+                <div class="mt-12 text-center mb-8">
+                    <a href="https://edugate.jazanu.edu.sa/jazan/ui/home.faces" target="_blank" class="inline-flex items-center gap-2 bg-indigo-600 hover:bg-indigo-700 text-white px-8 py-4 rounded-xl text-lg font-bold transition-all transform hover:-translate-y-1 shadow-lg hover:shadow-xl">
+                        الدخول للنظام الأكاديمي <i data-lucide="external-link" class="w-5 h-5"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <!-- View: Dept Head Guide -->
+        <div id="view-depthead-guide" class="view">
+            <div class="max-w-4xl mx-auto px-4 py-8">
+                <button onclick="navigateTo('college-engineering')" class="flex items-center gap-2 text-gray-500 hover:text-indigo-600 transition-colors mb-6 font-medium bg-white px-4 py-2 rounded-lg border border-gray-200 shadow-sm w-fit">
+                    <i data-lucide="chevron-right" class="w-5 h-5"></i> العودة لكلية الهندسة وعلوم الحاسب
+                </button>
+                
+                <h2 class="text-3xl font-bold text-indigo-900 mb-8 flex items-center gap-3">
+                    <i data-lucide="info" class="text-indigo-600 w-8 h-8"></i> دليل الوصول لرئيس القسم
+                </h2>
+
+                <div class="space-y-12">
+                    <div class="bg-white p-6 rounded-2xl shadow-sm border border-gray-100 text-center">
+                        <h3 class="text-xl font-bold text-gray-800 mb-4">اضغط هنا لتسجيل الدخول للنظام الاكاديمي</h3>
+                        <img src="Asset/depthead-step1.png" alt="الخطوة 1" class="mx-auto rounded-xl border border-gray-200 max-h-96 object-contain w-full" onerror="this.outerHTML='<div class=\'bg-gray-50 rounded-xl h-64 flex items-center justify-center border-2 border-dashed border-gray-300\'><span class=\'text-gray-400\'>[ صورة توضيحية رقم 1 ]<br>قم بإضافة الصورة في مسار Asset/depthead-step1.png</span></div>'">
+                    </div>
+
+                    <div class="bg-white p-6 rounded-2xl shadow-sm border border-gray-100 text-center">
+                        <h3 class="text-xl font-bold text-gray-800 mb-4">ادخل معلوماتك الرسمية للدخول</h3>
+                        <img src="Asset/depthead-step2.png" alt="الخطوة 2" class="mx-auto rounded-xl border border-gray-200 max-h-96 object-contain w-full" onerror="this.outerHTML='<div class=\'bg-gray-50 rounded-xl h-64 flex items-center justify-center border-2 border-dashed border-gray-300\'><span class=\'text-gray-400\'>[ صورة توضيحية رقم 2 ]<br>قم بإضافة الصورة في مسار Asset/depthead-step2.png</span></div>'">
+                    </div>
+
+                    <div class="bg-white p-6 rounded-2xl shadow-sm border border-gray-100 text-center">
+                        <h3 class="text-xl font-bold text-gray-800 mb-4">اضغط هنا لتوسعة الخيارات</h3>
+                        <img src="Asset/depthead-step3.png" alt="الخطوة 3" class="mx-auto rounded-xl border border-gray-200 max-h-96 object-contain w-full" onerror="this.outerHTML='<div class=\'bg-gray-50 rounded-xl h-64 flex items-center justify-center border-2 border-dashed border-gray-300\'><span class=\'text-gray-400\'>[ صورة توضيحية رقم 3 ]<br>قم بإضافة الصورة في مسار Asset/depthead-step3.png</span></div>'">
+                    </div>
+
+                    <div class="bg-white p-6 rounded-2xl shadow-sm border border-gray-100 text-center">
+                        <h3 class="text-xl font-bold text-gray-800 mb-4">اضغط هنا للوصول الي صفحة رئيس القسم</h3>
+                        <img src="Asset/depthead-step4.png" alt="الخطوة 4" class="mx-auto rounded-xl border border-gray-200 max-h-96 object-contain w-full" onerror="this.outerHTML='<div class=\'bg-gray-50 rounded-xl h-64 flex items-center justify-center border-2 border-dashed border-gray-300\'><span class=\'text-gray-400\'>[ صورة توضيحية رقم 4 ]<br>قم بإضافة الصورة في مسار Asset/depthead-step4.png</span></div>'">
+                    </div>
+
+                    <div class="bg-white p-6 rounded-2xl shadow-sm border border-gray-100 text-center">
+                        <h3 class="text-xl font-bold text-gray-800 mb-4 leading-relaxed">هنا صفحة رئيس القسم بامكانك ادخال طلب جديد او متابعة الطلبات والاستفسارات السابقة <br> وبامكانك طلب التواصل معه وبامكانك متابعة الطلبات السابقة</h3>
+                        <img src="Asset/depthead-step5.png" alt="الخطوة 5" class="mx-auto rounded-xl border border-gray-200 max-h-96 object-contain w-full" onerror="this.outerHTML='<div class=\'bg-gray-50 rounded-xl h-64 flex items-center justify-center border-2 border-dashed border-gray-300\'><span class=\'text-gray-400\'>[ صورة توضيحية رقم 5 ]<br>قم بإضافة الصورة في مسار Asset/depthead-step5.png</span></div>'">
+                    </div>
+
+                    <div class="bg-white p-6 rounded-2xl shadow-sm border border-gray-100 text-center">
+                        <h3 class="text-xl font-bold text-gray-800 mb-4 leading-relaxed">اختار نوع نموذج الطلب واختر القسم الذي تريد التواصل معه في حال كنت تريد التواصل مع رئيس القسم بامكانك الاختيار خيار رئيس القسم</h3>
+                        <img src="Asset/depthead-step6.png" alt="الخطوة 6" class="mx-auto rounded-xl border border-gray-200 max-h-96 object-contain w-full" onerror="this.outerHTML='<div class=\'bg-gray-50 rounded-xl h-64 flex items-center justify-center border-2 border-dashed border-gray-300\'><span class=\'text-gray-400\'>[ صورة توضيحية رقم 6 ]<br>قم بإضافة الصورة في مسار Asset/depthead-step6.png</span></div>'">
+                    </div>
+                </div>
+
+                <div class="mt-12 text-center mb-8">
+                    <a href="https://edugate.jazanu.edu.sa/jazan/ui/home.faces" target="_blank" class="inline-flex items-center gap-2 bg-indigo-600 hover:bg-indigo-700 text-white px-8 py-4 rounded-xl text-lg font-bold transition-all transform hover:-translate-y-1 shadow-lg hover:shadow-xl">
+                        الدخول للنظام الأكاديمي <i data-lucide="external-link" class="w-5 h-5"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <!-- View: Vice Dean Acad Guide -->
+        <div id="view-vicedeanacad-guide" class="view">
+            <div class="max-w-4xl mx-auto px-4 py-8">
+                <button onclick="navigateTo('college-engineering')" class="flex items-center gap-2 text-gray-500 hover:text-indigo-600 transition-colors mb-6 font-medium bg-white px-4 py-2 rounded-lg border border-gray-200 shadow-sm w-fit">
+                    <i data-lucide="chevron-right" class="w-5 h-5"></i> العودة لكلية الهندسة وعلوم الحاسب
+                </button>
+                
+                <h2 class="text-3xl font-bold text-indigo-900 mb-8 flex items-center gap-3">
+                    <i data-lucide="info" class="text-indigo-600 w-8 h-8"></i> دليل الوصول لوكيل الكلية للشؤون الأكاديمية
+                </h2>
+
+                <div class="space-y-12">
+                    <div class="bg-white p-6 rounded-2xl shadow-sm border border-gray-100 text-center">
+                        <h3 class="text-xl font-bold text-gray-800 mb-4">اضغط هنا لتسجيل الدخول للنظام الاكاديمي</h3>
+                        <img src="Asset/vicedeanacad-step1.png" alt="الخطوة 1" class="mx-auto rounded-xl border border-gray-200 max-h-96 object-contain w-full" onerror="this.outerHTML='<div class=\'bg-gray-50 rounded-xl h-64 flex items-center justify-center border-2 border-dashed border-gray-300\'><span class=\'text-gray-400\'>[ صورة توضيحية رقم 1 ]<br>قم بإضافة الصورة في مسار Asset/vicedeanacad-step1.png</span></div>'">
+                    </div>
+
+                    <div class="bg-white p-6 rounded-2xl shadow-sm border border-gray-100 text-center">
+                        <h3 class="text-xl font-bold text-gray-800 mb-4">ادخل معلوماتك الرسمية للدخول</h3>
+                        <img src="Asset/vicedeanacad-step2.png" alt="الخطوة 2" class="mx-auto rounded-xl border border-gray-200 max-h-96 object-contain w-full" onerror="this.outerHTML='<div class=\'bg-gray-50 rounded-xl h-64 flex items-center justify-center border-2 border-dashed border-gray-300\'><span class=\'text-gray-400\'>[ صورة توضيحية رقم 2 ]<br>قم بإضافة الصورة في مسار Asset/vicedeanacad-step2.png</span></div>'">
+                    </div>
+
+                    <div class="bg-white p-6 rounded-2xl shadow-sm border border-gray-100 text-center">
+                        <h3 class="text-xl font-bold text-gray-800 mb-4">اضغط هنا لتوسعة الخيارات</h3>
+                        <img src="Asset/vicedeanacad-step3.png" alt="الخطوة 3" class="mx-auto rounded-xl border border-gray-200 max-h-96 object-contain w-full" onerror="this.outerHTML='<div class=\'bg-gray-50 rounded-xl h-64 flex items-center justify-center border-2 border-dashed border-gray-300\'><span class=\'text-gray-400\'>[ صورة توضيحية رقم 3 ]<br>قم بإضافة الصورة في مسار Asset/vicedeanacad-step3.png</span></div>'">
+                    </div>
+
+                    <div class="bg-white p-6 rounded-2xl shadow-sm border border-gray-100 text-center">
+                        <h3 class="text-xl font-bold text-gray-800 mb-4">اضغط هنا للوصول الي صفحة وكيل الكلية للشؤون الأكاديمية</h3>
+                        <img src="Asset/vicedeanacad-step4.png" alt="الخطوة 4" class="mx-auto rounded-xl border border-gray-200 max-h-96 object-contain w-full" onerror="this.outerHTML='<div class=\'bg-gray-50 rounded-xl h-64 flex items-center justify-center border-2 border-dashed border-gray-300\'><span class=\'text-gray-400\'>[ صورة توضيحية رقم 4 ]<br>قم بإضافة الصورة في مسار Asset/vicedeanacad-step4.png</span></div>'">
+                    </div>
+
+                    <div class="bg-white p-6 rounded-2xl shadow-sm border border-gray-100 text-center">
+                        <h3 class="text-xl font-bold text-gray-800 mb-4 leading-relaxed">هنا صفحة وكيل الكلية بامكانك ادخال طلب جديد او متابعة الطلبات والاستفسارات السابقة <br> وبامكانك طلب التواصل معه وبامكانك متابعة الطلبات السابقة</h3>
+                        <img src="Asset/vicedeanacad-step5.png" alt="الخطوة 5" class="mx-auto rounded-xl border border-gray-200 max-h-96 object-contain w-full" onerror="this.outerHTML='<div class=\'bg-gray-50 rounded-xl h-64 flex items-center justify-center border-2 border-dashed border-gray-300\'><span class=\'text-gray-400\'>[ صورة توضيحية رقم 5 ]<br>قم بإضافة الصورة في مسار Asset/vicedeanacad-step5.png</span></div>'">
+                    </div>
+
+                    <div class="bg-white p-6 rounded-2xl shadow-sm border border-gray-100 text-center">
+                        <h3 class="text-xl font-bold text-gray-800 mb-4 leading-relaxed">اختار نوع نموذج الطلب واختر القسم الذي تريد التواصل معه في حال كنت تريد التواصل مع وكيل الكلية للشؤون الأكاديمية بامكانك الاختيار خيار وكيل الكلية</h3>
+                        <img src="Asset/vicedeanacad-step6.png" alt="الخطوة 6" class="mx-auto rounded-xl border border-gray-200 max-h-96 object-contain w-full" onerror="this.outerHTML='<div class=\'bg-gray-50 rounded-xl h-64 flex items-center justify-center border-2 border-dashed border-gray-300\'><span class=\'text-gray-400\'>[ صورة توضيحية رقم 6 ]<br>قم بإضافة الصورة في مسار Asset/vicedeanacad-step6.png</span></div>'">
+                    </div>
+                </div>
+
+                <div class="mt-12 text-center mb-8">
+                    <a href="https://edugate.jazanu.edu.sa/jazan/ui/home.faces" target="_blank" class="inline-flex items-center gap-2 bg-indigo-600 hover:bg-indigo-700 text-white px-8 py-4 rounded-xl text-lg font-bold transition-all transform hover:-translate-y-1 shadow-lg hover:shadow-xl">
+                        الدخول للنظام الأكاديمي <i data-lucide="external-link" class="w-5 h-5"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <!-- View: Dean Guide -->
+        <div id="view-dean-guide" class="view">
+            <div class="max-w-4xl mx-auto px-4 py-8">
+                <button onclick="navigateTo('college-engineering')" class="flex items-center gap-2 text-gray-500 hover:text-indigo-600 transition-colors mb-6 font-medium bg-white px-4 py-2 rounded-lg border border-gray-200 shadow-sm w-fit">
+                    <i data-lucide="chevron-right" class="w-5 h-5"></i> العودة لكلية الهندسة وعلوم الحاسب
+                </button>
+                
+                <h2 class="text-3xl font-bold text-indigo-900 mb-8 flex items-center gap-3">
+                    <i data-lucide="info" class="text-indigo-600 w-8 h-8"></i> دليل الوصول لعميد الكلية
+                </h2>
+
+                <div class="space-y-12">
+                    <div class="bg-white p-6 rounded-2xl shadow-sm border border-gray-100 text-center">
+                        <h3 class="text-xl font-bold text-gray-800 mb-4">اضغط هنا لتسجيل الدخول للنظام الاكاديمي</h3>
+                        <img src="Asset/dean-step1.png" alt="الخطوة 1" class="mx-auto rounded-xl border border-gray-200 max-h-96 object-contain w-full" onerror="this.outerHTML='<div class=\'bg-gray-50 rounded-xl h-64 flex items-center justify-center border-2 border-dashed border-gray-300\'><span class=\'text-gray-400\'>[ صورة توضيحية رقم 1 ]<br>قم بإضافة الصورة في مسار Asset/dean-step1.png</span></div>'">
+                    </div>
+
+                    <div class="bg-white p-6 rounded-2xl shadow-sm border border-gray-100 text-center">
+                        <h3 class="text-xl font-bold text-gray-800 mb-4">ادخل معلوماتك الرسمية للدخول</h3>
+                        <img src="Asset/dean-step2.png" alt="الخطوة 2" class="mx-auto rounded-xl border border-gray-200 max-h-96 object-contain w-full" onerror="this.outerHTML='<div class=\'bg-gray-50 rounded-xl h-64 flex items-center justify-center border-2 border-dashed border-gray-300\'><span class=\'text-gray-400\'>[ صورة توضيحية رقم 2 ]<br>قم بإضافة الصورة في مسار Asset/dean-step2.png</span></div>'">
+                    </div>
+
+                    <div class="bg-white p-6 rounded-2xl shadow-sm border border-gray-100 text-center">
+                        <h3 class="text-xl font-bold text-gray-800 mb-4">اضغط هنا لتوسعة الخيارات</h3>
+                        <img src="Asset/dean-step3.png" alt="الخطوة 3" class="mx-auto rounded-xl border border-gray-200 max-h-96 object-contain w-full" onerror="this.outerHTML='<div class=\'bg-gray-50 rounded-xl h-64 flex items-center justify-center border-2 border-dashed border-gray-300\'><span class=\'text-gray-400\'>[ صورة توضيحية رقم 3 ]<br>قم بإضافة الصورة في مسار Asset/dean-step3.png</span></div>'">
+                    </div>
+
+                    <div class="bg-white p-6 rounded-2xl shadow-sm border border-gray-100 text-center">
+                        <h3 class="text-xl font-bold text-gray-800 mb-4">اضغط هنا للوصول الي صفحة عميد الكلية</h3>
+                        <img src="Asset/dean-step4.png" alt="الخطوة 4" class="mx-auto rounded-xl border border-gray-200 max-h-96 object-contain w-full" onerror="this.outerHTML='<div class=\'bg-gray-50 rounded-xl h-64 flex items-center justify-center border-2 border-dashed border-gray-300\'><span class=\'text-gray-400\'>[ صورة توضيحية رقم 4 ]<br>قم بإضافة الصورة في مسار Asset/dean-step4.png</span></div>'">
+                    </div>
+
+                    <div class="bg-white p-6 rounded-2xl shadow-sm border border-gray-100 text-center">
+                        <h3 class="text-xl font-bold text-gray-800 mb-4 leading-relaxed">هنا صفحة عميد الكلية بامكانك ادخال طلب جديد او متابعة الطلبات والاستفسارات السابقة <br> وبامكانك طلب التواصل معه وبامكانك متابعة الطلبات السابقة</h3>
+                        <img src="Asset/dean-step5.png" alt="الخطوة 5" class="mx-auto rounded-xl border border-gray-200 max-h-96 object-contain w-full" onerror="this.outerHTML='<div class=\'bg-gray-50 rounded-xl h-64 flex items-center justify-center border-2 border-dashed border-gray-300\'><span class=\'text-gray-400\'>[ صورة توضيحية رقم 5 ]<br>قم بإضافة الصورة في مسار Asset/dean-step5.png</span></div>'">
+                    </div>
+
+                    <div class="bg-white p-6 rounded-2xl shadow-sm border border-gray-100 text-center">
+                        <h3 class="text-xl font-bold text-gray-800 mb-4 leading-relaxed">اختار نوع نموذج الطلب واختر القسم الذي تريد التواصل معه في حال كنت تريد التواصل مع عميد الكلية بامكانك الاختيار خيار عميد الكلية</h3>
+                        <img src="Asset/dean-step6.png" alt="الخطوة 6" class="mx-auto rounded-xl border border-gray-200 max-h-96 object-contain w-full" onerror="this.outerHTML='<div class=\'bg-gray-50 rounded-xl h-64 flex items-center justify-center border-2 border-dashed border-gray-300\'><span class=\'text-gray-400\'>[ صورة توضيحية رقم 6 ]<br>قم بإضافة الصورة في مسار Asset/dean-step6.png</span></div>'">
+                    </div>
+                </div>
+
+                <div class="mt-12 text-center mb-8">
+                    <a href="https://edugate.jazanu.edu.sa/jazan/ui/home.faces" target="_blank" class="inline-flex items-center gap-2 bg-indigo-600 hover:bg-indigo-700 text-white px-8 py-4 rounded-xl text-lg font-bold transition-all transform hover:-translate-y-1 shadow-lg hover:shadow-xl">
+                        الدخول للنظام الأكاديمي <i data-lucide="external-link" class="w-5 h-5"></i>
+                    </a>
+                </div>
             </div>
         </div>
 
@@ -420,20 +1589,20 @@
     <script>
         // Data
         const collegesData = [
-            { id: 'applied', name: 'الكلية التطبيقية', majors: ['تخصص الأمن السيبراني', 'تخصص الوسائط وتقنية الويب', 'تخصص التسويق والتجارة الإلكترونية', 'تخصص الإدارة السياحية', 'تخصص المحاسبة المهنية', 'تخصص إدارة أنظمة الشبكات', 'تخصص إدارة الخدمات الصحية', 'تخصص إدارة المخاطر والتأمين', 'تخصص إدارة المستودعات وسلاسل الإمداد', 'تخصص التصميم الداخلي', 'تخصص الدعم الفني', 'تخصص السلامة والصحة المهنية', 'تخصص الموارد البشرية', 'تخصص تصميم الأزياء', 'تخصص تكنولوجيا حماية البيئة', 'تخصص فنون ومهارات الطهي', 'تخصص مساعد طبيب أسنان'] },
-            { id: 'baish', name: 'كلية التطبيقات الصناعية ببيش', majors: ['تخصص تقنية هندسة القوى الكهربائية', 'تخصص تقنية الهندسة الكيميائية', 'تخصص تقنية هندسة الصيانة الميكانيكية'] },
-            { id: 'farasan', name: 'الكلية الجامعية بفرسان', majors: ['تخصص الاقتصاد المنزلي', 'تخصص التمريض', 'تخصص اللغة الإنجليزية'] },
-            { id: 'aldair', name: 'الكلية الجامعية بالدائر', majors: ['تخصص العلوم الطبية (التمريض)', 'تخصص اللغة الإنجليزية', 'تخصص الرياضيات'] },
-            { id: 'aldarb', name: 'الكلية الجامعية بالدرب', majors: ['تخصص الأحياء', 'تخصص الرياضيات', 'تخصص العلوم الطبية (تمريض)', 'تخصص إدارة الاعمال', 'تخصص اللغة الإنجليزية'] },
-            { id: 'nursing', name: 'كلية التمريض والعلوم الصحية', majors: ['تخصص بكالوريوس التمريض', 'تخصص بكالوريوس الإسعاف والطوارئ', 'تخصص بكالوريوس العلاج التنفسي', 'تخصص بكالوريوس تقنية المختبرات الطبية', 'تخصص ماجستير علوم المختبرات الإكلينيكية', 'تخصص بكالوريوس التغذية الإكلينيكية', 'تخصص بكالوريوس العلاج الطبيعي', 'تخصص بكالوريوس الأشعة التشخيصية', 'تخصص بكالوريوس الوبائيات', 'تخصص بكالوريوس المعلوماتية الصحية', 'تخصص بكالوريوس التثقيف والتعزيز الصحي', 'تخصص ماجستير الصحة العامة في الوبائيات والإحصاء الحيوي'] },
-            { id: 'dentistry', name: 'كلية طب الأسنان', majors: ['تخصص طب وجراحة الفم والأسنان'] },
-            { id: 'pharmacy', name: 'كلية الصيدلة', majors: ['تخصص دكتور صيدلي', 'تخصص ماجستير في علم السموم التطبيقي'] },
-            { id: 'science', name: 'كلية العلوم', majors: ['تخصص بكالوريوس الكيمياء', 'تخصص بكالوريوس الفيزياء', 'تخصص بكالوريوس الكيمياء الصناعية', 'تخصص بكالوريوس الطاقة المتجددة', 'تخصص بكالوريوس الأحياء', 'تخصص الرياضيات', 'تخصص الرياضيات والعلوم الاكتيوارية', 'تخصص الرياضيات وعلوم البيانات'] },
-            { id: 'business', name: 'كلية الأعمال', majors: ['تخصص المالية', 'تخصص المحاسبة', 'تخصص بكالوريوس نظم المعلومات الإدارية', 'تخصص بكالوريوس إدارة الاعمال', 'تخصص بكالوريوس التسويق والتجارة الالكترونية', 'تخصص الإدارة السياحية والفندقية', 'تخصص ماجستير إدارة الأعمال التنفيذي'] },
-            { id: 'law', name: 'كلية الشريعة والقانون', majors: ['تخصص بكالوريوس الشريعة', 'تخصص ماجستير الفقه وأصوله', 'تخصص البكالوريوس في القانون', 'تخصص الدراسات الإسلامية'] },
-            { id: 'arts', name: 'كلية الفنون والعلوم الإنسانية', majors: ['تخصص بكالوريوس اللغة العربية', 'تخصص ماجستير اللغة العربية', 'تخصص دكتوراة اللغة العربية', 'تخصص البكالوريوس في اللغة الإنجليزية', 'تخصص ماجستير الآداب في اللغويات', 'تخصص ماجستير التربية في المناهج وطرق التدريس', 'تخصص ماجستير التربية في الإدارة التربوية', 'تخصص ماجستير التربية في التربية البدنية', 'تخصص ماجستير التربية في تقنيات التعليم', 'تخصص بكالوريوس علوم الرياضة', 'تخصص التصميم الداخلي', 'تخصص الفنون التطبيقية', 'تخصص ماجستير التربية في علم النفس (الإرشاد النفسي - علم نفس الإدمان)', 'تخصص ماجستير التربية في التربية الخاصة (اضطراب طيف التوحد - الموهبة والإبداع)', 'تخصص الصحافة والنشر الإلكتروني', 'تخصص الآثار', 'تخصص العلوم الاجتماعية'] },
-            { id: 'medicine', name: 'كلية الطب', majors: ['تخصص طب الأسرة والمجتمع', 'تخصص الامراض الباطنية', 'تخصص طب الأطفال', 'تخصص الجراحة', 'تخصص النساء والتوليد', 'تخصص علم الأدوية السريري', 'تخصص علم وظائف الأعضاء البشري', 'تخصص علم الأمراض', 'تخصص الكيمياء الحيوية الطبية', 'تخصص التشريح البشري', 'تخصص الأحياء الدقيقة والطفيليات الطبية'] },
-            { id: 'engineering', name: 'كلية الهندسة وعلوم الحاسب', majors: ['تخصص بكالوريوس العلوم في الهندسة المدنية', 'تخصص بكالوريوس العلوم في الهندسة المعمارية', 'تخصص الهندسة الصناعية', 'تخصص الهندسة الكيميائية', 'تخصص بكالوريوس الهندسة الميكانيكية', 'تخصص بكالوريوس علوم الحاسب', 'تخصص بكالوريوس تقنية المعلومات', 'تخصص بكالوريوس العلوم في الهندسة الكهربائية', 'تخصص بكالوريوس هندسة الحاسب والشبكات'] }
+            { id: 'applied', name: 'الكلية التطبيقية' },
+            { id: 'baish', name: 'كلية التطبيقات الصناعية ببيش' },
+            { id: 'farasan', name: 'الكلية الجامعية بفرسان' },
+            { id: 'aldair', name: 'الكلية الجامعية بالدائر' },
+            { id: 'aldarb', name: 'الكلية الجامعية بالدرب' },
+            { id: 'nursing', name: 'كلية التمريض والعلوم الصحية' },
+            { id: 'dentistry', name: 'كلية طب الأسنان' },
+            { id: 'pharmacy', name: 'كلية الصيدلة' },
+            { id: 'science', name: 'كلية العلوم' },
+            { id: 'business', name: 'كلية الأعمال' },
+            { id: 'law', name: 'كلية الشريعة والقانون' },
+            { id: 'arts', name: 'كلية الفنون والعلوم الإنسانية' },
+            { id: 'medicine', name: 'كلية الطب' },
+            { id: 'engineering', name: 'كلية الهندسة وعلوم الحاسب' }
         ];
 
         const menSports = ['الألعاب الإلكترونية', 'رياضات المضرب', 'العاب القوى', 'فنون قتالية', 'بلياردو', 'شطرنج', 'رماية', 'سباحة', 'درجات', 'العاب ذوي الإعاقة', 'الألعاب الفردية', 'الألعاب الجماعية'];
@@ -460,27 +1629,33 @@
         }
 
         function navigateTo(viewId, param = null) {
-            // Hide all views
+            const targetView = document.getElementById(`view-${viewId}`);
+            
+            // تحقق (Safety Check) لمنع الانهيار في حال كان القسم مفقوداً
+            if (!targetView) {
+                console.error(`الصفحة 'view-${viewId}' غير موجودة في الكود!`);
+                return;
+            }
+
+            // إخفاء جميع الصفحات
             document.querySelectorAll('.view').forEach(view => {
                 view.classList.remove('active');
             });
             
-            // Show target view
-            document.getElementById(`view-${viewId}`).classList.add('active');
+            // إظهار الصفحة المستهدفة
+            targetView.classList.add('active');
             window.scrollTo({ top: 0, behavior: 'smooth' });
 
-            // Handle specific view rendering
-            if (viewId === 'college-details' && param !== null) {
-                renderCollegeDetails(collegesData[param]);
-            } else if (viewId === 'sports_category') {
+            // معالجة صفحات محددة إذا تطلب الأمر
+            if (viewId === 'sports_category') {
                 renderSportsCategory(param);
             }
         }
 
         function renderCollegesGrid() {
             const grid = document.getElementById('colleges-grid');
-            grid.innerHTML = collegesData.map((college, index) => `
-                <button onclick="navigateTo('college-details', ${index})" class="bg-white p-6 rounded-2xl shadow-sm hover:shadow-md border border-gray-100 hover:border-indigo-300 transition-all text-right group flex flex-col justify-between h-full w-full">
+            grid.innerHTML = collegesData.map((college) => `
+                <button onclick="navigateTo('college-${college.id}')" class="bg-white p-6 rounded-2xl shadow-sm hover:shadow-md border border-gray-100 hover:border-indigo-300 transition-all text-right group flex flex-col justify-between h-full w-full">
                     <div>
                         <div class="w-12 h-12 bg-indigo-50 rounded-lg flex items-center justify-center mb-4 group-hover:bg-indigo-600 transition-colors">
                             <i data-lucide="landmark" class="text-indigo-600 group-hover:text-white transition-colors w-6 h-6"></i>
@@ -494,19 +1669,6 @@
                     </div>
                 </button>
             `).join('');
-        }
-
-        function renderCollegeDetails(college) {
-            document.getElementById('college-title').textContent = college.name;
-            
-            const majorsContainer = document.getElementById('majors-container');
-            majorsContainer.innerHTML = college.majors.map(major => `
-                <span class="bg-gray-50 text-gray-800 border border-gray-200 px-4 py-2 rounded-full text-sm font-medium hover:bg-indigo-50 hover:border-indigo-200 transition-colors">
-                    ${major}
-                </span>
-            `).join('');
-            
-            lucide.createIcons();
         }
 
         function renderSportsCategory(type) {
